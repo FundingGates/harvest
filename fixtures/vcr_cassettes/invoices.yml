@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.harvestapp.com/invoices?access_token=7L1pttbIrQSKC8sZpFcNhvrhlVVAQUQqB8ZPRms8GrMrnlS9hEzTVQIAv8rny/b0MFDWyZRieBdcyNEYdt2WSQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary ""
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 21 Sep 2012 21:35:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack)
+      Cache-Control:
+      - private, no-store, no-cache, max-age=0, must-revalidate
+      X-Frame-Options:
+      - SAMEORIGIN
+      Access-Control-Allow-Origin:
+      - http://.fundinggates.com
+      Access-Control-Expose-Headers:
+      - X-Served-From,X-Company-Version,X-Asked-With-Method
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept
+      Etag:
+      - ! '"dec1587abe78a0e75171c3e7ba9f79ed"'
+      Access-Control-Max-Age:
+      - '1200'
+      X-Served-From:
+      - http://api.harvestapp.com/invoices
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Set-Cookie:
+      - _harvest_sess=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlMDRjNDU4YWU5NTlhZWMzNDIxNWNkZTU2NGI1M2ZmMTA%3D--f3bceb96f869915b654600bc8adc1c8541835231;
+        domain=.harvestapp.com; path=/; HttpOnly
+      X-Runtime:
+      - '0.032428'
+      X-Harvest-Box:
+      - rails7
+      X-Harvest-Fe:
+      - lb2
+      X-Harvest-Dc:
+      - vxny
+    body:
+      encoding: US-ASCII
+      string: ! '[{"invoices":{"amount":"200.0","client_id":1199777,"client_key":"561a9dab77e03c83b5926dc3ee20f1a61dec6dea","created_at":"2012-09-21T21:34:54Z","created_by_id":389508,"currency":"United
+        States Dollars - USD","discount":null,"discount_amount":"0.0","due_amount":"200.0","due_at":"2012-09-21","due_at_human_format":"upon
+        receipt","estimate_id":null,"id":1860925,"issued_at":"2012-09-21","notes":"","number":"AB143","period_end":null,"period_start":null,"purchase_order":"","recurring_invoice_id":null,"retainer_id":null,"state":"draft","subject":"","tax":null,"tax2":null,"tax2_amount":"0.0","tax_amount":"0.0","updated_at":"2012-09-21T21:34:54Z"}},{"invoices":{"amount":"1000.0","client_id":1199777,"client_key":"a6dfe0dd97f74f97543c0baf65c738951bdeff0e","created_at":"2012-08-29T19:30:35Z","created_by_id":389508,"currency":"United
+        States Dollars - USD","discount":null,"discount_amount":"0.0","due_amount":"1000.0","due_at":"2012-08-29","due_at_human_format":"upon
+        receipt","estimate_id":null,"id":1783906,"issued_at":"2012-08-29","notes":"","number":"AB142","period_end":null,"period_start":null,"purchase_order":"","recurring_invoice_id":null,"retainer_id":null,"state":"draft","subject":"","tax":null,"tax2":null,"tax2_amount":"0.0","tax_amount":"0.0","updated_at":"2012-08-29T19:30:35Z"}}]'
+    http_version: 
+  recorded_at: Fri, 21 Sep 2012 21:35:33 GMT
+recorded_with: VCR 2.2.5

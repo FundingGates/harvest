@@ -12,10 +12,13 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{TODO: Write a gem summary}
   gem.homepage      = ""
 
-  gem.add_dependency 'rest-core'
   gem.add_dependency 'rest-client'
-  gem.add_development_dependency 'rspec'
+  gem.add_dependency 'rest-core'
+  gem.add_dependency 'json'
   gem.add_development_dependency 'pry'
+  gem.add_development_dependency 'rspec'
+  gem.add_development_dependency 'vcr'
+  gem.add_development_dependency 'webmock'
     
 
   gem.files         = `git ls-files`.split($/)
