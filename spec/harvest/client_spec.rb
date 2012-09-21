@@ -38,4 +38,13 @@ describe Harvest::Client do
       end
     end
   end
+
+  describe '#customer' do
+    it 'retrieves a customer' do
+      VCR.use_cassette('customer') do
+        customer = subject.customer('1199777')
+        customer.name.should == "Highgroove"
+      end
+    end
+  end
 end

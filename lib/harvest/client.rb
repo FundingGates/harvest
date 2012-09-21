@@ -32,5 +32,9 @@ module Harvest
     def customers
       get('clients').map { |c| Harvest::Customer.new(c["client"]) }
     end
+
+    def customer(id)
+      Harvest::Customer.new(get("clients/#{id}")["client"])
+    end
   end
 end
