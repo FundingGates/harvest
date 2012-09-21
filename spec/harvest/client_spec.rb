@@ -15,8 +15,8 @@ describe Harvest::Client do
     it 'returns an array of invoices' do
       VCR.use_cassette('invoices') do
         invoices = subject.invoices
-        invoices[0]["amount"].should == '200.0'
-        invoices[1]["amount"].should == '1000.0'
+        invoices[0].amount.should == '200.0'
+        invoices[1].amount.should == '1000.0'
       end
     end
   end
