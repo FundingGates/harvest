@@ -11,7 +11,7 @@ describe Harvest::Client do
     end
   end
 
-  describe '#invoices', vcr: true do
+  describe '#invoices' do
     it 'returns an array of invoices' do
       VCR.use_cassette('invoices') do
         invoices = subject.invoices
@@ -21,11 +21,20 @@ describe Harvest::Client do
     end
   end
 
-  describe '#invoice', vcr: true do
+  describe '#invoice' do
     it 'returns an invoice from id' do
       VCR.use_cassette('invoice') do
         invoice = subject.invoice('1860925')
         invoice.amount.should == '200.0'
+      end
+    end
+  end
+
+  describe '#customers' do
+    it 'list customers' do
+      VCR.use_cassette('customers') do
+        customers = subject.customers
+        customers[0].name.should == "Highgroove"
       end
     end
   end

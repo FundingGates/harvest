@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.harvestapp.com/clients?access_token=7L1pttbIrQSKC8sZpFcNhvrhlVVAQUQqB8ZPRms8GrMrnlS9hEzTVQIAv8rny/b0MFDWyZRieBdcyNEYdt2WSQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary ""
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 21 Sep 2012 22:52:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack)
+      Cache-Control:
+      - private, no-store, no-cache, max-age=0, must-revalidate
+      X-Frame-Options:
+      - SAMEORIGIN
+      Access-Control-Allow-Origin:
+      - http://.fundinggates.com
+      Access-Control-Expose-Headers:
+      - X-Served-From,X-Company-Version,X-Asked-With-Method
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept
+      Etag:
+      - ! '"ebc4800f667bc4d6f74ef229c768315c"'
+      Access-Control-Max-Age:
+      - '1200'
+      X-Served-From:
+      - http://api.harvestapp.com/clients
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Set-Cookie:
+      - _harvest_sess=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlMjE2MTg4YWU2MjVlZGQ4M2ExNzRkNjc0MDQyMTllNjQ%3D--1d9ef0f0251ead75dc7fe3d9ae73b3962d9b4ef7;
+        domain=.harvestapp.com; path=/; HttpOnly
+      X-Runtime:
+      - '0.099554'
+      X-Harvest-Box:
+      - rails2
+      X-Harvest-Fe:
+      - lb2
+      X-Harvest-Dc:
+      - vxny
+    body:
+      encoding: US-ASCII
+      string: ! '[{"client":{"active":true,"cache_version":711732839,"created_at":"2012-08-29T19:30:16Z","currency":"United
+        States Dollars - USD","highrise_id":null,"id":1199777,"name":"Highgroove","updated_at":"2012-08-29T19:30:16Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}}]'
+    http_version: 
+  recorded_at: Fri, 21 Sep 2012 22:52:56 GMT
+recorded_with: VCR 2.2.5

@@ -1,5 +1,6 @@
 require_relative './hclient.rb'
 require_relative './invoice.rb'
+require_relative './customer.rb'
 require 'json'
 
 module Harvest
@@ -26,6 +27,10 @@ module Harvest
 
     def invoice(id)
       Harvest::Invoice.new(get("invoices/#{id}")["invoice"])
+    end
+
+    def customers
+      get('clients').map { |c| Harvest::Customer.new(c["client"]) }
     end
   end
 end
