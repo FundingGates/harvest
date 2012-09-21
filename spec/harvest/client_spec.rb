@@ -20,4 +20,13 @@ describe Harvest::Client do
       end
     end
   end
+
+  describe '#invoice', vcr: true do
+    it 'returns an invoice from id' do
+      VCR.use_cassette('invoice') do
+        invoice = subject.invoice('1860925')
+        invoice.amount.should == '200.0'
+      end
+    end
+  end
 end

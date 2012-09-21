@@ -23,5 +23,9 @@ module Harvest
     def invoices
       get('invoices').map { |i| Harvest::Invoice.new(i["invoices"]) }
     end
+
+    def invoice(id)
+      Harvest::Invoice.new(get("invoices/#{id}")["invoice"])
+    end
   end
 end
