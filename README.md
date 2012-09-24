@@ -1,6 +1,6 @@
 # Harvest
 
-TODO: Write a gem description
+Integrate with the [Harvest API](http://www.getharvest.com/api).  Verification is done using OAuth2 rather than HTTP Basic.  If you would like to authenticate using HTTP Basic, check out the [Harvested](https://github.com/zmoazeni/harvested) gem.
 
 ## Installation
 
@@ -18,7 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Create a new client by passing in a valid OAuth2 token:
+
+```ruby
+client = Harvest::Client.new('7L1pttbIrQSKC8sZpFcNhvrhlVVAQUQqB8ZPRms8GrMrnlS9hEzTVQIAv8rny/b0MFDWyZRieBdcyNEYdt2WSR==')
+```
 
 ## Contributing
 
