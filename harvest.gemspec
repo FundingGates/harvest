@@ -8,14 +8,15 @@ Gem::Specification.new do |gem|
   gem.version       = Harvest::VERSION
   gem.authors       = ["Greggory Rothmeier"]
   gem.email         = ["gregg@highgroove.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{Wrapper for the Harvest API}
+  gem.summary       = %q{Wrapper for the Harvest API}
+  gem.homepage      = "https://github.com/FundingGates/harvest"
 
   gem.add_dependency 'rest-client'
   gem.add_dependency 'rest-core'
   gem.add_dependency 'json'
   gem.add_development_dependency 'pry'
+  gem.add_development_dependency 'rake'
   gem.add_development_dependency 'rspec'
   gem.add_development_dependency 'vcr'
   gem.add_development_dependency 'webmock'
