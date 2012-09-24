@@ -2,7 +2,7 @@ require_relative '../../lib/harvest/client.rb'
 require 'spec_helper'
 
 describe Harvest::Client do
-  subject { Harvest::Client.new('7L1pttbIrQSKC8sZpFcNhvrhlVVAQUQqB8ZPRms8GrMrnlS9hEzTVQIAv8rny/b0MFDWyZRieBdcyNEYdt2WSQ==') }
+  subject { Harvest::Client.new('64sNJl36mmKp6Wp6hmPwA67fD500G+6LVQjwNY6IGTl+SMNfFsC+Xv4Mc4/EMUSvzbAafRqpcUS2p7prjXBImA==') }
 
   describe '#new' do
     it 'delegates to the rest-core client' do
@@ -26,6 +26,12 @@ describe Harvest::Client do
       VCR.use_cassette('invoice') do
         invoice = subject.invoice('1860925')
         invoice.amount.should == '200.0'
+      end
+    end
+
+    it 'raises an exception if an invoice id is not valid' do
+      VCR.use_cassette('invoice_invalid') do
+        expect { subject.invoice('abc123') }.to raise_error Harvest::InvoiceNotFound
       end
     end
   end

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.harvestapp.com/clients?access_token=7L1pttbIrQSKC8sZpFcNhvrhlVVAQUQqB8ZPRms8GrMrnlS9hEzTVQIAv8rny/b0MFDWyZRieBdcyNEYdt2WSQ==
+    uri: https://api.harvestapp.com/clients?access_token=64sNJl36mmKp6Wp6hmPwA67fD500G+6LVQjwNY6IGTl+SMNfFsC+Xv4Mc4/EMUSvzbAafRqpcUS2p7prjXBImA==
     body:
       encoding: ASCII-8BIT
       string: !binary ""
@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 21 Sep 2012 22:52:49 GMT
+      - Mon, 24 Sep 2012 16:02:28 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -47,7 +47,7 @@ http_interactions:
       Access-Control-Allow-Headers:
       - Content-Type,Accept
       Etag:
-      - ! '"ebc4800f667bc4d6f74ef229c768315c"'
+      - ! '"2f768b8967ff042e413993cb57fce544"'
       Access-Control-Max-Age:
       - '1200'
       X-Served-From:
@@ -55,20 +55,20 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Set-Cookie:
-      - _harvest_sess=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlMjE2MTg4YWU2MjVlZGQ4M2ExNzRkNjc0MDQyMTllNjQ%3D--1d9ef0f0251ead75dc7fe3d9ae73b3962d9b4ef7;
+      - _harvest_sess=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlNmU2YjVjNGRlMDY0YWY2MjlmODY3NWIyMDA2NWVlYzY%3D--a342e08269964c7caf62989582520889cfcd4946;
         domain=.harvestapp.com; path=/; HttpOnly
       X-Runtime:
-      - '0.099554'
+      - '0.030545'
       X-Harvest-Box:
-      - rails2
+      - rails4
       X-Harvest-Fe:
       - lb2
       X-Harvest-Dc:
       - vxny
     body:
       encoding: US-ASCII
-      string: ! '[{"client":{"active":true,"cache_version":711732839,"created_at":"2012-08-29T19:30:16Z","currency":"United
+      string: ! '[{"client":{"active":true,"cache_version":2300537900,"created_at":"2012-08-29T19:30:16Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1199777,"name":"Highgroove","updated_at":"2012-08-29T19:30:16Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}}]'
     http_version: 
-  recorded_at: Fri, 21 Sep 2012 22:52:56 GMT
+  recorded_at: Mon, 24 Sep 2012 16:02:44 GMT
 recorded_with: VCR 2.2.5

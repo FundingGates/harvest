@@ -24,13 +24,19 @@ Create a new client by passing in a valid OAuth2 token:
 client = Harvest::Client.new('7L1pttbIrQSKC8sZpFcNhvrhlVVAQUQqB8ZPRms8GrMrnlS9hEzTVQIAv8rny/b0MFDWyZRieBdcyNEYdt2WSR==')
 
 client.invoices
-#=> [ #<Harvest::Invoice>, #<Harvest::Invoice> ]
+#=> [ #<Harvest::Invoice id='123456'>, #<Harvest::Invoice id='234567'> ]
 
 invoice = client.invoices.first
-#=> #<Harvest::Invoice>
+#=> #<Harvest::Invoice id='123456'
 
 invoice.id
 #=> '123456'
+
+client.invoice('234567')
+#=> #<Harvest::Invoice id='234567'>
+
+client.invoice('0')
+#=> Harvest::InvoiceNotFound
 
 invoice.amount
 #=> "200.0"

@@ -1,6 +1,7 @@
 require_relative './hclient.rb'
 require_relative './invoice.rb'
 require_relative './customer.rb'
+require_relative './error/invoice_not_found.rb'
 require 'json'
 
 module Harvest
@@ -26,7 +27,11 @@ module Harvest
     end
 
     def invoice(id)
-      Harvest::Invoice.new(get("invoices/#{id}")["invoice"])
+      begin
+        Harvest::Invoice.new(get("invoices/#{id}")["invoice"])
+      rescue JSON::ParserError
+        raise Harvest::InvoiceNotFound
+      end
     end
 
     def customers
