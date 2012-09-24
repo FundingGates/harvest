@@ -22,7 +22,24 @@ Create a new client by passing in a valid OAuth2 token:
 
 ```ruby
 client = Harvest::Client.new('7L1pttbIrQSKC8sZpFcNhvrhlVVAQUQqB8ZPRms8GrMrnlS9hEzTVQIAv8rny/b0MFDWyZRieBdcyNEYdt2WSR==')
+
+client.invoices
+#=> [ #<Harvest::Invoice>, #<Harvest::Invoice> ]
+
+invoice = client.invoices.first
+#=> #<Harvest::Invoice>
+
+invoice.id
+#=> '123456'
+
+invoice.amount
+#=> "200.0"
+
+client.customers
+#=> [ #<Harvest::Customer>, #<Harvest::Customer> ]
 ```
+
+The full list of attributes is available on the Harvest API website.  Each attribute is accessable through a method call.  **Currently only Invoices and Customers (Clients as Harvest refers to them) are supported.**
 
 ## Contributing
 
