@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.harvestapp.com/invoices?access_token=64sNJl36mmKp6Wp6hmPwA67fD500G+6LVQjwNY6IGTl+SMNfFsC+Xv4Mc4/EMUSvzbAafRqpcUS2p7prjXBImA==
+    uri: https://api.harvestapp.com/invoices?access_token=/TMzjL4ZB2MNuxwe9F3DbsuETe4iIx0B8KpW39q6tDy86EXHWhvH1/N44ZHOXNmOzA22sOcxGq87x/2CZJEoRA==
     body:
       encoding: ASCII-8BIT
       string: !binary ""
@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 24 Sep 2012 16:02:28 GMT
+      - Fri, 05 Oct 2012 14:40:29 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -41,13 +41,13 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Access-Control-Allow-Origin:
-      - http://.fundinggates.com
+      - http://localhost:3000
       Access-Control-Expose-Headers:
       - X-Served-From,X-Company-Version,X-Asked-With-Method
       Access-Control-Allow-Headers:
       - Content-Type,Accept
       Etag:
-      - ! '"dec1587abe78a0e75171c3e7ba9f79ed"'
+      - ! '"b617e57c5f7e140c8903e56e79f36fa9"'
       Access-Control-Max-Age:
       - '1200'
       X-Served-From:
@@ -55,23 +55,53 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Set-Cookie:
-      - _harvest_sess=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlNWFmMDU0MjI5MjUyNGY4YjU4ZWI5NDk0MmEyZmZmZTA%3D--6d6c06dc981b24d9230b9beba1c23b3ced38f556;
+      - _harvest_sess=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlOTBjZTFiNzA4ZDIxMGEyMGMzNTk0NWQ3ZTBlZjEzNGM%3D--fbbbb965d8c84754b15b923a7a3d6359b83e353c;
         domain=.harvestapp.com; path=/; HttpOnly
       X-Runtime:
-      - '0.093256'
+      - '0.051198'
       X-Harvest-Box:
       - rails3
       X-Harvest-Fe:
-      - lb2
+      - lb1
       X-Harvest-Dc:
       - vxny
     body:
       encoding: US-ASCII
-      string: ! '[{"invoices":{"amount":"200.0","client_id":1199777,"client_key":"561a9dab77e03c83b5926dc3ee20f1a61dec6dea","created_at":"2012-09-21T21:34:54Z","created_by_id":389508,"currency":"United
-        States Dollars - USD","discount":null,"discount_amount":"0.0","due_amount":"200.0","due_at":"2012-09-21","due_at_human_format":"upon
-        receipt","estimate_id":null,"id":1860925,"issued_at":"2012-09-21","notes":"","number":"AB143","period_end":null,"period_start":null,"purchase_order":"","recurring_invoice_id":null,"retainer_id":null,"state":"draft","subject":"","tax":null,"tax2":null,"tax2_amount":"0.0","tax_amount":"0.0","updated_at":"2012-09-21T21:34:54Z"}},{"invoices":{"amount":"1000.0","client_id":1199777,"client_key":"a6dfe0dd97f74f97543c0baf65c738951bdeff0e","created_at":"2012-08-29T19:30:35Z","created_by_id":389508,"currency":"United
-        States Dollars - USD","discount":null,"discount_amount":"0.0","due_amount":"1000.0","due_at":"2012-08-29","due_at_human_format":"upon
-        receipt","estimate_id":null,"id":1783906,"issued_at":"2012-08-29","notes":"","number":"AB142","period_end":null,"period_start":null,"purchase_order":"","recurring_invoice_id":null,"retainer_id":null,"state":"draft","subject":"","tax":null,"tax2":null,"tax2_amount":"0.0","tax_amount":"0.0","updated_at":"2012-08-29T19:30:35Z"}}]'
+      string: ! '[{"invoices":{"amount":"435.5","client_id":1267814,"client_key":"298e5a523a9640057c07c79621fb2dc4e5ff5b3b","created_at":"2012-09-30T04:07:56Z","created_by_id":null,"currency":"United
+        States Dollars - USD","discount":null,"discount_amount":"0.0","due_amount":"435.5","due_at":"2012-10-30","due_at_human_format":"net
+        30","estimate_id":null,"id":1882548,"issued_at":"2012-09-30","notes":"","number":"117","period_end":null,"period_start":null,"purchase_order":"","recurring_invoice_id":46928,"retainer_id":null,"state":"draft","subject":"","tax":"8.875","tax2":null,"tax2_amount":"0.0","tax_amount":"35.5","updated_at":"2012-09-30T04:07:56Z"}},{"invoices":{"amount":"871.0","client_id":1267871,"client_key":"394466e617f66c774ba32694632d4acdce083e82","created_at":"2012-09-29T23:17:50Z","created_by_id":402196,"currency":"United
+        States Dollars - USD","discount":null,"discount_amount":"0.0","due_amount":"871.0","due_at":"2012-10-06","due_at_human_format":"custom","estimate_id":null,"id":1882179,"issued_at":"2012-09-29","notes":"","number":"111","period_end":null,"period_start":null,"purchase_order":"","recurring_invoice_id":null,"retainer_id":null,"state":"open","subject":"","tax":"8.875","tax2":null,"tax2_amount":"0.0","tax_amount":"71.0","updated_at":"2012-09-29T23:17:59Z"}},{"invoices":{"amount":"523.47","client_id":1267870,"client_key":"5767130970a1969e0513146ba6559da9e28a9328","created_at":"2012-09-29T23:16:10Z","created_by_id":402196,"currency":"United
+        States Dollars - USD","discount":null,"discount_amount":"0.0","due_amount":"523.47","due_at":"2012-10-29","due_at_human_format":"net
+        30","estimate_id":null,"id":1882178,"issued_at":"2012-09-29","notes":"","number":"110","period_end":null,"period_start":null,"purchase_order":"","recurring_invoice_id":null,"retainer_id":null,"state":"open","subject":"","tax":"8.875","tax2":null,"tax2_amount":"0.0","tax_amount":"42.67","updated_at":"2012-09-29T23:16:23Z"}},{"invoices":{"amount":"435.5","client_id":1267814,"client_key":"b7cf8f1bb67abe45f78efe8c2a9083ae2ee3ea17","created_at":"2012-09-29T19:56:22Z","created_by_id":402196,"currency":"United
+        States Dollars - USD","discount":null,"discount_amount":"0.0","due_amount":"435.5","due_at":"2012-10-29","due_at_human_format":"net
+        30","estimate_id":null,"id":1881775,"issued_at":"2012-09-29","notes":"","number":"100","period_end":null,"period_start":null,"purchase_order":"","recurring_invoice_id":null,"retainer_id":null,"state":"open","subject":"","tax":"8.875","tax2":null,"tax2_amount":"0.0","tax_amount":"35.5","updated_at":"2012-09-29T22:49:57Z"}},{"invoices":{"amount":"871.0","client_id":1267878,"client_key":"48d7e27114eb97bc0121b30d4f12b2e01d40d468","created_at":"2012-09-29T23:42:07Z","created_by_id":402196,"currency":"United
+        States Dollars - USD","discount":null,"discount_amount":"0.0","due_amount":"871.0","due_at":"2012-10-28","due_at_human_format":"net
+        30","estimate_id":null,"id":1882204,"issued_at":"2012-09-28","notes":"","number":"116","period_end":null,"period_start":null,"purchase_order":"","recurring_invoice_id":null,"retainer_id":null,"state":"draft","subject":"","tax":"8.875","tax2":null,"tax2_amount":"0.0","tax_amount":"71.0","updated_at":"2012-09-29T23:42:07Z"}},{"invoices":{"amount":"217.75","client_id":1267869,"client_key":"007d10e717cd066cfc78ab1637f6e9e3b352c63f","created_at":"2012-09-29T23:12:33Z","created_by_id":402196,"currency":"United
+        States Dollars - USD","discount":null,"discount_amount":"0.0","due_amount":"217.75","due_at":"2012-10-27","due_at_human_format":"net
+        30","estimate_id":null,"id":1882172,"issued_at":"2012-09-27","notes":"","number":"108","period_end":null,"period_start":null,"purchase_order":"","recurring_invoice_id":null,"retainer_id":null,"state":"open","subject":"","tax":"8.875","tax2":null,"tax2_amount":"0.0","tax_amount":"17.75","updated_at":"2012-09-29T23:18:31Z"}},{"invoices":{"amount":"4355.0","client_id":1267877,"client_key":"779b365f914a6273ffcb6d2df33a70b3dc7a1b9c","created_at":"2012-09-29T23:39:22Z","created_by_id":402196,"currency":"United
+        States Dollars - USD","discount":null,"discount_amount":"0.0","due_amount":"4355.0","due_at":"2012-10-02","due_at_human_format":"custom","estimate_id":null,"id":1882200,"issued_at":"2012-09-25","notes":"","number":"114","period_end":null,"period_start":null,"purchase_order":"","recurring_invoice_id":null,"retainer_id":null,"state":"open","subject":"","tax":"8.875","tax2":null,"tax2_amount":"0.0","tax_amount":"355.0","updated_at":"2012-09-29T23:39:31Z"}},{"invoices":{"amount":"1306.5","client_id":1267869,"client_key":"8e8933df2fe7a1401936c4a95b456be5cde0c330","created_at":"2012-09-29T23:11:33Z","created_by_id":402196,"currency":"United
+        States Dollars - USD","discount":null,"discount_amount":"0.0","due_amount":"1306.5","due_at":"2012-10-25","due_at_human_format":"net
+        30","estimate_id":null,"id":1882170,"issued_at":"2012-09-25","notes":"","number":"107","period_end":null,"period_start":null,"purchase_order":"","recurring_invoice_id":null,"retainer_id":null,"state":"open","subject":"","tax":"8.875","tax2":null,"tax2_amount":"0.0","tax_amount":"106.5","updated_at":"2012-09-29T23:11:44Z"}},{"invoices":{"amount":"217.75","client_id":1267867,"client_key":"4416ce77ebdda8ef7c19e0afd93d58a639cbc9ee","created_at":"2012-09-29T23:08:02Z","created_by_id":402196,"currency":"United
+        States Dollars - USD","discount":null,"discount_amount":"0.0","due_amount":"217.75","due_at":"2012-10-10","due_at_human_format":"net
+        15","estimate_id":null,"id":1882161,"issued_at":"2012-09-25","notes":"","number":"105","period_end":null,"period_start":null,"purchase_order":"","recurring_invoice_id":null,"retainer_id":null,"state":"open","subject":"","tax":"8.875","tax2":null,"tax2_amount":"0.0","tax_amount":"17.75","updated_at":"2012-09-29T23:08:12Z"}},{"invoices":{"amount":"300.0","client_id":1267872,"client_key":"e438e281f022e5259f62763a2ef6d99c62cdc149","created_at":"2012-09-29T23:21:11Z","created_by_id":402196,"currency":"United
+        States Dollars - USD","discount":null,"discount_amount":"0.0","due_amount":"-100.0","due_at":"2012-10-18","due_at_human_format":"net
+        30","estimate_id":null,"id":1882183,"issued_at":"2012-09-18","notes":"","number":"113","period_end":null,"period_start":null,"purchase_order":"","recurring_invoice_id":null,"retainer_id":null,"state":"paid","subject":"","tax":"8.875","tax2":null,"tax2_amount":"0.0","tax_amount":"0.0","updated_at":"2012-09-29T23:21:43Z"}},{"invoices":{"amount":"271.64","client_id":1267858,"client_key":"586c825f2ce29e0307e9be769cf7db6faaa5d7ee","created_at":"2012-09-29T22:56:15Z","created_by_id":402196,"currency":"United
+        States Dollars - USD","discount":null,"discount_amount":"0.0","due_amount":"171.64","due_at":"2012-10-18","due_at_human_format":"net
+        30","estimate_id":null,"id":1882094,"issued_at":"2012-09-18","notes":"","number":"102","period_end":null,"period_start":null,"purchase_order":"","recurring_invoice_id":null,"retainer_id":null,"state":"partial","subject":"","tax":"8.875","tax2":null,"tax2_amount":"0.0","tax_amount":"22.14","updated_at":"2012-09-29T22:56:56Z"}},{"invoices":{"amount":"708.88","client_id":1267878,"client_key":"33f272ab9e98247a42c07dbd67acdb49123e18b0","created_at":"2012-09-29T23:41:12Z","created_by_id":402196,"currency":"United
+        States Dollars - USD","discount":null,"discount_amount":"0.0","due_amount":"708.88","due_at":"2012-10-11","due_at_human_format":"net
+        30","estimate_id":null,"id":1882202,"issued_at":"2012-09-11","notes":"","number":"115","period_end":null,"period_start":null,"purchase_order":"BA-98789","recurring_invoice_id":null,"retainer_id":null,"state":"open","subject":"","tax":"8.875","tax2":null,"tax2_amount":"0.0","tax_amount":"8.88","updated_at":"2012-09-29T23:41:22Z"}},{"invoices":{"amount":"150.0","client_id":1267872,"client_key":"20987016301a1adf85e7bd006304be6d89c5a518","created_at":"2012-09-29T23:20:01Z","created_by_id":402196,"currency":"United
+        States Dollars - USD","discount":null,"discount_amount":"0.0","due_amount":"150.0","due_at":"2012-10-11","due_at_human_format":"net
+        30","estimate_id":null,"id":1882181,"issued_at":"2012-09-11","notes":"","number":"112","period_end":null,"period_start":null,"purchase_order":"","recurring_invoice_id":null,"retainer_id":null,"state":"open","subject":"","tax":"8.875","tax2":null,"tax2_amount":"0.0","tax_amount":"0.0","updated_at":"2012-09-29T23:20:19Z"}},{"invoices":{"amount":"380.52","client_id":1267870,"client_key":"5e953e4a56f635ecaddac1085da7b4cf17a53107","created_at":"2012-09-29T23:15:13Z","created_by_id":402196,"currency":"United
+        States Dollars - USD","discount":null,"discount_amount":"0.0","due_amount":"380.52","due_at":"2012-10-04","due_at_human_format":"net
+        30","estimate_id":null,"id":1882176,"issued_at":"2012-09-04","notes":"","number":"109","period_end":null,"period_start":null,"purchase_order":"","recurring_invoice_id":null,"retainer_id":null,"state":"open","subject":"","tax":"8.875","tax2":null,"tax2_amount":"0.0","tax_amount":"31.02","updated_at":"2012-09-29T23:15:24Z"}},{"invoices":{"amount":"653.25","client_id":1267860,"client_key":"2b27b5e2d4751b92c00f45f24ee53da6dd2df982","created_at":"2012-09-29T22:53:18Z","created_by_id":402196,"currency":"United
+        States Dollars - USD","discount":null,"discount_amount":"0.0","due_amount":"653.25","due_at":"2012-09-19","due_at_human_format":"net
+        15","estimate_id":null,"id":1882092,"issued_at":"2012-09-04","notes":"","number":"101","period_end":null,"period_start":null,"purchase_order":"","recurring_invoice_id":null,"retainer_id":null,"state":"open","subject":"","tax":"8.875","tax2":null,"tax2_amount":"0.0","tax_amount":"53.25","updated_at":"2012-09-29T22:53:28Z"}},{"invoices":{"amount":"75.0","client_id":1267867,"client_key":"cf5d9fd514a1ed70cfbc32329a088345972c236a","created_at":"2012-09-29T23:06:49Z","created_by_id":402196,"currency":"United
+        States Dollars - USD","discount":null,"discount_amount":"0.0","due_amount":"75.0","due_at":"2012-08-29","due_at_human_format":"net
+        15","estimate_id":null,"id":1882158,"issued_at":"2012-08-14","notes":"","number":"104","period_end":null,"period_start":null,"purchase_order":"","recurring_invoice_id":null,"retainer_id":null,"state":"open","subject":"","tax":"8.875","tax2":null,"tax2_amount":"0.0","tax_amount":"0.0","updated_at":"2012-09-29T23:07:03Z"}},{"invoices":{"amount":"773.19","client_id":1267867,"client_key":"0a117dd4866faece048a5a773dcf7717138efa2a","created_at":"2012-09-29T23:05:38Z","created_by_id":402196,"currency":"United
+        States Dollars - USD","discount":null,"discount_amount":"0.0","due_amount":"773.19","due_at":"2012-08-16","due_at_human_format":"net
+        15","estimate_id":null,"id":1882110,"issued_at":"2012-08-01","notes":"","number":"103","period_end":null,"period_start":null,"purchase_order":"","recurring_invoice_id":null,"retainer_id":null,"state":"open","subject":"","tax":"8.875","tax2":null,"tax2_amount":"0.0","tax_amount":"63.03","updated_at":"2012-09-29T23:06:02Z"}},{"invoices":{"amount":"310.29","client_id":1267868,"client_key":"6e65a5325c6bdcd963ace46a1077e0d191cb864b","created_at":"2012-09-29T23:09:43Z","created_by_id":402196,"currency":"United
+        States Dollars - USD","discount":null,"discount_amount":"0.0","due_amount":"310.29","due_at":"2012-07-01","due_at_human_format":"net
+        30","estimate_id":null,"id":1882164,"issued_at":"2012-06-01","notes":"","number":"106","period_end":null,"period_start":null,"purchase_order":"","recurring_invoice_id":null,"retainer_id":null,"state":"open","subject":"","tax":"8.875","tax2":null,"tax2_amount":"0.0","tax_amount":"25.29","updated_at":"2012-09-29T23:09:53Z"}}]'
     http_version: 
-  recorded_at: Mon, 24 Sep 2012 16:02:44 GMT
+  recorded_at: Fri, 05 Oct 2012 14:40:32 GMT
 recorded_with: VCR 2.2.5

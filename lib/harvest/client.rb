@@ -1,7 +1,8 @@
 require_relative './hclient.rb'
 require_relative './invoice.rb'
 require_relative './customer.rb'
-require_relative './error/invoice_not_found.rb'
+require_relative './person.rb'
+require_relative './error/harvest_error.rb'
 require 'json'
 
 module Harvest
@@ -19,7 +20,21 @@ module Harvest
     end
 
     def get(args)
-      JSON.parse(super(args))
+      response = JSON.parse(super(args))
+      if response.is_a?(Hash) && response.has_key?("error")
+        raise HarvestError, response["error_description"]
+      end
+      response
+    end
+
+    def who_am_i?
+      Harvest::Person.new(get('account/who_am_i')["user"])
+    end
+
+    def people
+      people = get('people')
+      people = [people] unless people.is_a?(Array)
+      people.map { |p| Harvest::Person.new(p["user"]) }
     end
 
     def invoices

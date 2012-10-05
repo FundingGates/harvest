@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.harvestapp.com/account/who_am_i?access_token=bad-token
+    body:
+      encoding: ASCII-8BIT
+      string: !binary ""
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 05 Oct 2012 14:15:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '134'
+      Connection:
+      - keep-alive
+      Status:
+      - '401'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack)
+      Www-Authenticate:
+      - Bearer realm="Rack::OAuth2 Protected Resources", error="invalid_token", error_description="The
+        access token provided is expired, revoked, malformed or invalid for other
+        reasons."
+      X-Served-From:
+      - http://api.harvestapp.com/account/who_am_i
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Runtime:
+      - '0.008009'
+    body:
+      encoding: US-ASCII
+      string: ! '{"error":"invalid_token","error_description":"The access token provided
+        is expired, revoked, malformed or invalid for other reasons."}'
+    http_version: 
+  recorded_at: Fri, 05 Oct 2012 14:15:52 GMT
+recorded_with: VCR 2.2.5
