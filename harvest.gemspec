@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'harvest/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "harvest"
+  gem.name          = "harvest-oauth2"
   gem.version       = Harvest::VERSION
   gem.authors       = ["Greggory Rothmeier"]
   gem.email         = ["gregg@highgroove.com"]
