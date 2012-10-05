@@ -2,6 +2,7 @@ require_relative './hclient.rb'
 require_relative './invoice.rb'
 require_relative './customer.rb'
 require_relative './person.rb'
+require_relative './company.rb'
 require_relative './error/harvest_error.rb'
 require 'json'
 
@@ -35,6 +36,10 @@ module Harvest
       people = get('people')
       people = [people] unless people.is_a?(Array)
       people.map { |p| Harvest::Person.new(p["user"]) }
+    end
+
+    def company
+      Harvest::Company.new(get('account/who_am_i')["company"])
     end
 
     def invoices

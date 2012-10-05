@@ -38,6 +38,15 @@ describe Harvest::Client do
     end
   end
 
+  describe '#company' do
+    it 'retrieves information about the company' do
+      VCR.use_cassette('company') do
+        company = subject.company
+        company.name.should == 'Funding Gates'
+      end
+    end
+  end
+
   describe '#invoices' do
     it 'returns an array of invoices' do
       VCR.use_cassette('invoices') do
