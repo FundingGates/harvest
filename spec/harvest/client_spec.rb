@@ -15,7 +15,7 @@ describe Harvest::Client do
     it 'raises an exception if Harvest returns an error' do
       VCR.use_cassette('bad_token') do
         client = Harvest::Client.new("bad-token")
-        expect { client.get('account/who_am_i') }.to raise_error(Harvest::HarvestError, /token provided is expired/)
+        expect { client.get('account/who_am_i') }.to raise_error(Harvest::AuthorizationFailure, /token provided is expired/)
       end
     end
   end

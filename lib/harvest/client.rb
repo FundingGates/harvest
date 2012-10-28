@@ -23,7 +23,11 @@ module Harvest
     def get(args)
       response = JSON.parse(super(args))
       if response.is_a?(Hash) && response.has_key?("error")
-        raise HarvestError, response["error_description"]
+        exception = HarvestError 
+        if %w(invalid_token invalid_grant).include?(response['error'])
+          exception = AuthorizationFailure
+        end
+        raise exception, response["error_description"]
       end
       response
     end
