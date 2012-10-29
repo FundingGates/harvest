@@ -87,6 +87,14 @@ describe Harvest::Client do
         customers[0].name.should == "A Cavallo Violins, LLC"
       end
     end
+
+    it 'accepts query params' do
+      VCR.use_cassette('customer_query_params') do
+        cutoff = Time.utc(2012, 10, 1)
+        customers = subject.customers(updated_since: cutoff)
+        expect { customers.delete_if { |inv| Time.parse(inv.updated_at) < cutoff } }.to_not change(customers, :length)
+      end
+    end
   end
 
   describe '#customer' do

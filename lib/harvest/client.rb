@@ -58,8 +58,8 @@ module Harvest
       end
     end
 
-    def customers
-      get('clients').map { |c| Harvest::Customer.new(c["client"]) }
+    def customers(query = {})
+      get('clients', query).map { |c| Harvest::Customer.new(c["client"]) }
     end
 
     def customer(id)
