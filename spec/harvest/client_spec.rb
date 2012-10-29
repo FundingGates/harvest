@@ -1,8 +1,9 @@
 require_relative '../../lib/harvest/client.rb'
 require 'spec_helper'
+require 'time'
 
 describe Harvest::Client do
-  subject { Harvest::Client.new('/TMzjL4ZB2MNuxwe9F3DbsuETe4iIx0B8KpW39q6tDy86EXHWhvH1/N44ZHOXNmOzA22sOcxGq87x/2CZJEoRA==') }
+  subject { Harvest::Client.new('htRN5eZXkWqrhGlvrqXNOtnXd8VyMfWw1u/J3zZWRnvb+ffKdj64CiNqHtOLLUJCBgFc7y312kcLzV+TCYkfMQ==') }
 
   describe '#new' do
     it 'delegates to the rest-core client' do
@@ -52,6 +53,14 @@ describe Harvest::Client do
       VCR.use_cassette('invoices') do
         invoices = subject.invoices
         invoices[0].should be_a Harvest::Invoice
+      end
+    end
+
+    it 'accepts query params' do
+      VCR.use_cassette('invoice_query_params') do
+        cutoff = Time.utc(2012, 10, 1)
+        invoices = subject.invoices(updated_since: cutoff)
+        expect { invoices.delete_if { |inv| Time.parse(inv.updated_at) < cutoff } }.to_not change(invoices, :length)
       end
     end
   end

@@ -20,8 +20,8 @@ module Harvest
       @client = obj
     end
 
-    def get(args)
-      response = JSON.parse(super(args))
+    def get(path, query={})
+      response = JSON.parse(super(path, query))
       if response.is_a?(Hash) && response.has_key?("error")
         exception = HarvestError 
         if %w(invalid_token invalid_grant).include?(response['error'])
@@ -46,8 +46,8 @@ module Harvest
       Harvest::Company.new(get('account/who_am_i')["company"])
     end
 
-    def invoices
-      get('invoices').map { |i| Harvest::Invoice.new(i["invoices"]) }
+    def invoices(query = {})
+      get('invoices', query).map { |i| Harvest::Invoice.new(i["invoices"]) }
     end
 
     def invoice(id)
