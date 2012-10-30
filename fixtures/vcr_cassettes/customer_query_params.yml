@@ -8,7 +8,7 @@ http_interactions:
       string: !binary ""
     headers:
       Accept:
-      - application/json
+      - application/xml
       Accept-Encoding:
       - gzip, deflate
       Content-Length:
@@ -20,59 +20,91 @@ http_interactions:
   response:
     status:
       code: 200
-      message: OK
+      message: !binary |-
+        T0s=
     headers:
-      Server:
-      - nginx
-      Date:
-      - Tue, 30 Oct 2012 15:28:52 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Status:
-      - '200'
-      X-Powered-By:
-      - Phusion Passenger (mod_rails/mod_rack)
-      Cache-Control:
-      - private, no-store, no-cache, max-age=0, must-revalidate
-      X-Frame-Options:
-      - SAMEORIGIN
-      Access-Control-Allow-Origin:
-      - http://localhost:3000
-      Access-Control-Expose-Headers:
-      - X-Served-From,X-Company-Version,X-Asked-With-Method
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept
-      Etag:
-      - ! '"3ebec18a4c8019f6a2c4cf18eaa092cc"'
-      Access-Control-Max-Age:
-      - '1200'
-      X-Served-From:
-      - http://api.harvestapp.com/clients
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
-      Set-Cookie:
-      - _harvest_sess=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlYTljZTAwNTgyZGQ1ZDg3NzdjNjhmYjM0ZmZlYzFjMzM%3D--5ced983c2a9041f2af7262d0dafc617680afa5b1;
-        domain=.harvestapp.com; path=/; HttpOnly
-      X-Runtime:
-      - '0.048701'
-      X-Harvest-Box:
-      - rails7
-      X-Harvest-Fe:
-      - lb4
-      X-Harvest-Dc:
-      - vxny
+      !binary "U2VydmVy":
+      - !binary |-
+        bmdpbng=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VHVlLCAzMCBPY3QgMjAxMiAxODo0NzoxNCBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24veG1sOyBjaGFyc2V0PXV0Zi04
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+      !binary "U3RhdHVz":
+      - !binary |-
+        MjAw
+      !binary "WC1Qb3dlcmVkLUJ5":
+      - !binary |-
+        UGh1c2lvbiBQYXNzZW5nZXIgKG1vZF9yYWlscy9tb2RfcmFjayk=
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        cHJpdmF0ZSwgbm8tc3RvcmUsIG5vLWNhY2hlLCBtYXgtYWdlPTAsIG11c3Qt
+        cmV2YWxpZGF0ZQ==
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
+      - !binary |-
+        aHR0cDovL2xvY2FsaG9zdDozMDAw
+      !binary "QWNjZXNzLUNvbnRyb2wtRXhwb3NlLUhlYWRlcnM=":
+      - !binary |-
+        WC1TZXJ2ZWQtRnJvbSxYLUNvbXBhbnktVmVyc2lvbixYLUFza2VkLVdpdGgt
+        TWV0aG9k
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctSGVhZGVycw==":
+      - !binary |-
+        Q29udGVudC1UeXBlLEFjY2VwdA==
+      !binary "QWNjZXNzLUNvbnRyb2wtTWF4LUFnZQ==":
+      - !binary |-
+        MTIwMA==
+      !binary "WC1TZXJ2ZWQtRnJvbQ==":
+      - !binary |-
+        aHR0cDovL2FwaS5oYXJ2ZXN0YXBwLmNvbS9jbGllbnRz
+      !binary "WC1VYS1Db21wYXRpYmxl":
+      - !binary |-
+        SUU9RWRnZSxjaHJvbWU9MQ==
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        X2hhcnZlc3Rfc2Vzcz1CQWg3QmtraUQzTmxjM05wYjI1ZmFXUUdPZ1pGUmlJ
+        bE4yUTBZamRtTURoa1pqRXlZelZtTkRFd1l6VXdPV1F4WXpNNFlXUmlNMkkl
+        M0QtLTRhMmYxNGVlOTJlMmM1Y2IxZGY1MWY4MTU5MjEyY2NhNDRjMmQ2YTk7
+        IGRvbWFpbj0uaGFydmVzdGFwcC5jb207IHBhdGg9LzsgSHR0cE9ubHk=
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wNzY2MTA=
+      !binary "WC1IYXJ2ZXN0LUJveA==":
+      - !binary |-
+        cmFpbHM2
+      !binary "WC1IYXJ2ZXN0LUZl":
+      - !binary |-
+        bGI0
+      !binary "WC1IYXJ2ZXN0LURj":
+      - !binary |-
+        dnhueQ==
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
     body:
-      encoding: US-ASCII
-      string: ! '[{"client":{"active":true,"cache_version":1168697696,"created_at":"2012-10-11T01:58:37Z","currency":"United
-        States Dollars - USD","highrise_id":null,"id":1286136,"name":"Courtney Concepts","updated_at":"2012-10-11T01:58:37Z","currency_symbol":"$","details":"P.O.
-        Box 3537\r\nLa Habra, CA  90632","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3730965128,"created_at":"2012-10-17T22:34:09Z","currency":"United
-        States Dollars - USD","highrise_id":null,"id":1296645,"name":"Platinum Pavers","updated_at":"2012-10-17T22:34:09Z","currency_symbol":"$","details":"9098
-        Central Avenue\r\nSan Jose, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1907755403,"created_at":"2012-10-18T04:34:24Z","currency":"United
-        States Dollars - USD","highrise_id":null,"id":1296940,"name":"SJC Limo Ride","updated_at":"2012-10-18T04:34:24Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":null}}]'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA+2ST2/iMBDF70j9DiOrxw35SyAouOqmWq2qSkULXPZmkilY
+        69jIcVDz7TcpSVlS9YC4sFJvtue98Tz7F9+95gL2qAuu5Iy4Q4cAylRlXG5m
+        ZLX8YU3IHR3EqeAoTQGm2uGMMK1ZRegAoC00y3rDUsP32IrWSglkklCjS4zt
+        Q60VpizdotVe2+q5NLhBTagT2yf1zqORGcwsZlpDVm8Nz5FQz3E9y3Us1106
+        7nQ0mfrj33WTd0PXodS6DlfRleR1ARamrhfwoIRgugALVouH2tapDqYt32w1
+        L9DiWW9QkFzMSJOO0Nj+R9c6Pxio601C1w9j+10jWY40UaU2EitIlExxZ4rY
+        fjs/SMpddl7uo6GX2yqqfK0EvT2G7I4OwgwN46Kg8+HzEL6rV/BH/vhm8MTg
+        J1tr9g2Se4DICX0vtjtt53xhpTAWl3vFU7Sa+V50HaKduWK56D3Yp5a2pWDF
+        sfiHy+zzVh+kb2jaRzavDNPx0vOmfjB1oivFNArDYNTHdC6Y4bLMYc6ayGdD
+        epL6ckgjJ5pAUv+qZgLu9yhLvBksmIRHVWCD6hejlzA6WTpB81tecLWMRoHT
+        Z3TxmMATzxX84hmeTehJ5ssJ/a8A7Fb1sH8BGPVCqhUIAAA=
     http_version: 
-  recorded_at: Tue, 30 Oct 2012 15:29:06 GMT
+  recorded_at: Tue, 30 Oct 2012 18:47:29 GMT
 recorded_with: VCR 2.2.5

@@ -8,7 +8,7 @@ http_interactions:
       string: !binary ""
     headers:
       Accept:
-      - application/json
+      - application/xml
       Accept-Encoding:
       - gzip, deflate
       Content-Length:
@@ -20,56 +20,88 @@ http_interactions:
   response:
     status:
       code: 200
-      message: OK
+      message: !binary |-
+        T0s=
     headers:
-      Server:
-      - nginx
-      Date:
-      - Tue, 30 Oct 2012 15:28:52 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Status:
-      - '200'
-      X-Powered-By:
-      - Phusion Passenger (mod_rails/mod_rack)
-      Cache-Control:
-      - private, no-store, no-cache, max-age=0, must-revalidate
-      X-Frame-Options:
-      - SAMEORIGIN
-      Access-Control-Allow-Origin:
-      - http://localhost:3000
-      Access-Control-Expose-Headers:
-      - X-Served-From,X-Company-Version,X-Asked-With-Method
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept
-      Etag:
-      - ! '"d6180813a5bd43a2806756d3aa730355"'
-      Access-Control-Max-Age:
-      - '1200'
-      X-Served-From:
-      - http://api.harvestapp.com/clients/1268610
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
-      Set-Cookie:
-      - _harvest_sess=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlMGQ3Mzg2YzY5ODU0NDc2ZDNkZmRiNzA4NGFiYjVmNTM%3D--b0413551a8b82b02396acea47ab67b40392de8e6;
-        domain=.harvestapp.com; path=/; HttpOnly
-      X-Runtime:
-      - '0.011993'
-      X-Harvest-Box:
-      - rails7
-      X-Harvest-Fe:
-      - lb4
-      X-Harvest-Dc:
-      - vxny
+      !binary "U2VydmVy":
+      - !binary |-
+        bmdpbng=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VHVlLCAzMCBPY3QgMjAxMiAxODo0NzoxNCBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24veG1sOyBjaGFyc2V0PXV0Zi04
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+      !binary "U3RhdHVz":
+      - !binary |-
+        MjAw
+      !binary "WC1Qb3dlcmVkLUJ5":
+      - !binary |-
+        UGh1c2lvbiBQYXNzZW5nZXIgKG1vZF9yYWlscy9tb2RfcmFjayk=
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        cHJpdmF0ZSwgbm8tc3RvcmUsIG5vLWNhY2hlLCBtYXgtYWdlPTAsIG11c3Qt
+        cmV2YWxpZGF0ZQ==
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
+      - !binary |-
+        aHR0cDovL2xvY2FsaG9zdDozMDAw
+      !binary "QWNjZXNzLUNvbnRyb2wtRXhwb3NlLUhlYWRlcnM=":
+      - !binary |-
+        WC1TZXJ2ZWQtRnJvbSxYLUNvbXBhbnktVmVyc2lvbixYLUFza2VkLVdpdGgt
+        TWV0aG9k
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctSGVhZGVycw==":
+      - !binary |-
+        Q29udGVudC1UeXBlLEFjY2VwdA==
+      !binary "QWNjZXNzLUNvbnRyb2wtTWF4LUFnZQ==":
+      - !binary |-
+        MTIwMA==
+      !binary "WC1TZXJ2ZWQtRnJvbQ==":
+      - !binary |-
+        aHR0cDovL2FwaS5oYXJ2ZXN0YXBwLmNvbS9jbGllbnRzLzEyNjg2MTA=
+      !binary "WC1VYS1Db21wYXRpYmxl":
+      - !binary |-
+        SUU9RWRnZSxjaHJvbWU9MQ==
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        X2hhcnZlc3Rfc2Vzcz1CQWg3QmtraUQzTmxjM05wYjI1ZmFXUUdPZ1pGUmlJ
+        bE56QmxNelJtTW1RNU56UmhZbUUzTTJNd1kyRXpNRGRoWXpNeE56RmpNelEl
+        M0QtLTQ4OGUzZDk2NGM4ZTA4NjQ0NTJhN2UzMmRhOTcwOGVhZWI0MDg4YWQ7
+        IGRvbWFpbj0uaGFydmVzdGFwcC5jb207IHBhdGg9LzsgSHR0cE9ubHk=
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wNTY3MjA=
+      !binary "WC1IYXJ2ZXN0LUJveA==":
+      - !binary |-
+        cmFpbHM1
+      !binary "WC1IYXJ2ZXN0LUZl":
+      - !binary |-
+        bGI0
+      !binary "WC1IYXJ2ZXN0LURj":
+      - !binary |-
+        dnhueQ==
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
     body:
-      encoding: US-ASCII
-      string: ! '{"client":{"active":true,"cache_version":2050356220,"created_at":"2012-09-30T20:26:12Z","currency":"United
-        States Dollars - USD","highrise_id":null,"id":1268610,"name":"Whitworth Construction","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"19
-        Merion Ave","default_invoice_timeframe":null,"last_invoice_kind":null}}'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA5WSS2/CMBCE7/wKy+rVzaMSApQYVUW99QSoUm8mWZJVHRvZ
+        Ttr8+zqvUkAcevTuN6MZ28n6u5KkAWNRq5RGjyEloDKdoypSut+9sgVd81mS
+        SQTl+IyQRGQOGyCuPUFKD1pLEIpyZ2pIgmHXY5nISmCj80ijclCAoTxMgov9
+        oDAgHORMuBHP/dFhBZTHYRSzcMmewl0cruL5Koo/vMWvYNDXxvjsLd8r9GOy
+        dX5ryUZLKYwljOy3Gy+aqE5SYlEatMAwv4pIFMqUdq0oT4I/XK+7wXkUzxfz
+        yPcaCSUq4O8lui9tXEletLLezF+PVknQLzuqPuX/q3wWXFRmtq0OWvKHc79p
+        1GE5OIHS8mhJ3sB07/Hc+NeaxgNyFLV0DFWjMQPWhTgan3MM1opKXl3KXUlv
+        KIU9rz5R5feNblD/4YLpx/0AHrlcT6ICAAA=
     http_version: 
-  recorded_at: Tue, 30 Oct 2012 15:29:07 GMT
+  recorded_at: Tue, 30 Oct 2012 18:47:29 GMT
 recorded_with: VCR 2.2.5

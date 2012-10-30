@@ -8,7 +8,7 @@ http_interactions:
       string: !binary ""
     headers:
       Accept:
-      - application/json
+      - application/xml
       Accept-Encoding:
       - gzip, deflate
       Content-Length:
@@ -28,7 +28,7 @@ http_interactions:
         bmdpbng=
       !binary "RGF0ZQ==":
       - !binary |-
-        VHVlLCAzMCBPY3QgMjAxMiAxNToyODo1MSBHTVQ=
+        VHVlLCAzMCBPY3QgMjAxMiAxODo0NzoxMyBHTVQ=
       !binary "Q29udGVudC1UeXBl":
       - !binary |-
         dGV4dC9odG1s
@@ -46,7 +46,7 @@ http_interactions:
         UGh1c2lvbiBQYXNzZW5nZXIgKG1vZF9yYWlscy9tb2RfcmFjayk=
       !binary "WC1SdW50aW1l":
       - !binary |-
-        MC4wMzE2ODg=
+        MC4wNTAxOTE=
       !binary "Q29udGVudC1FbmNvZGluZw==":
       - !binary |-
         Z3ppcA==
@@ -84,5 +84,5 @@ http_interactions:
         4C2NBfsjDj3AuykpphmD1gKWTGiL805WCloTnzm+/83AabgLzffMsv1xtq7C
         bkjthokwdNOCg99NDL2UbjbT0JXfNHSTf/37D+f0dToWDAAA
     http_version: 
-  recorded_at: Tue, 30 Oct 2012 15:29:05 GMT
+  recorded_at: Tue, 30 Oct 2012 18:47:28 GMT
 recorded_with: VCR 2.2.5

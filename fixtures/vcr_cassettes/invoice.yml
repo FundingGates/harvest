@@ -8,7 +8,7 @@ http_interactions:
       string: !binary ""
     headers:
       Accept:
-      - application/json
+      - application/xml
       Accept-Encoding:
       - gzip, deflate
       Content-Length:
@@ -20,57 +20,94 @@ http_interactions:
   response:
     status:
       code: 200
-      message: OK
+      message: !binary |-
+        T0s=
     headers:
-      Server:
-      - nginx
-      Date:
-      - Tue, 30 Oct 2012 14:13:41 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Status:
-      - '200'
-      X-Powered-By:
-      - Phusion Passenger (mod_rails/mod_rack)
-      Cache-Control:
-      - private, no-store, no-cache, max-age=0, must-revalidate
-      X-Frame-Options:
-      - SAMEORIGIN
-      Access-Control-Allow-Origin:
-      - http://localhost:3000
-      Access-Control-Expose-Headers:
-      - X-Served-From,X-Company-Version,X-Asked-With-Method
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept
-      Etag:
-      - ! '"be0804f9417af14ddf6ec56f71eca50a"'
-      Access-Control-Max-Age:
-      - '1200'
-      X-Served-From:
-      - http://api.harvestapp.com/invoices/1882548
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
-      Set-Cookie:
-      - _harvest_sess=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlNjJmNjFlNDc3MTRjODM1OTQ3YzMwNjc5NGQ4NmNhYWY%3D--ef693bdbc4d8ad3c4b191a35197519e9acd9b412;
-        domain=.harvestapp.com; path=/; HttpOnly
-      X-Runtime:
-      - '0.298502'
-      X-Harvest-Box:
-      - rails7
-      X-Harvest-Fe:
-      - lb4
-      X-Harvest-Dc:
-      - vxny
+      !binary "U2VydmVy":
+      - !binary |-
+        bmdpbng=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VHVlLCAzMCBPY3QgMjAxMiAxODo0NzoxMyBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24veG1sOyBjaGFyc2V0PXV0Zi04
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+      !binary "U3RhdHVz":
+      - !binary |-
+        MjAw
+      !binary "WC1Qb3dlcmVkLUJ5":
+      - !binary |-
+        UGh1c2lvbiBQYXNzZW5nZXIgKG1vZF9yYWlscy9tb2RfcmFjayk=
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        cHJpdmF0ZSwgbm8tc3RvcmUsIG5vLWNhY2hlLCBtYXgtYWdlPTAsIG11c3Qt
+        cmV2YWxpZGF0ZQ==
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
+      - !binary |-
+        aHR0cDovL2xvY2FsaG9zdDozMDAw
+      !binary "QWNjZXNzLUNvbnRyb2wtRXhwb3NlLUhlYWRlcnM=":
+      - !binary |-
+        WC1TZXJ2ZWQtRnJvbSxYLUNvbXBhbnktVmVyc2lvbixYLUFza2VkLVdpdGgt
+        TWV0aG9k
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctSGVhZGVycw==":
+      - !binary |-
+        Q29udGVudC1UeXBlLEFjY2VwdA==
+      !binary "QWNjZXNzLUNvbnRyb2wtTWF4LUFnZQ==":
+      - !binary |-
+        MTIwMA==
+      !binary "WC1TZXJ2ZWQtRnJvbQ==":
+      - !binary |-
+        aHR0cDovL2FwaS5oYXJ2ZXN0YXBwLmNvbS9pbnZvaWNlcy8xODgyNTQ4
+      !binary "WC1VYS1Db21wYXRpYmxl":
+      - !binary |-
+        SUU9RWRnZSxjaHJvbWU9MQ==
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        X2hhcnZlc3Rfc2Vzcz1CQWg3QmtraUQzTmxjM05wYjI1ZmFXUUdPZ1pGUmlJ
+        bFpURmpNVFkzWXpNeVltSmpOVFEzTURBd01Ea3laVEprWkdGaFpqVXhNVFkl
+        M0QtLTlkNzQwYTA4NTU0YjNkODEzODg1ZDFkNzIyMDQ2NjAzYWI2MmZkNTQ7
+        IGRvbWFpbj0uaGFydmVzdGFwcC5jb207IHBhdGg9LzsgSHR0cE9ubHk=
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wOTAxMzk=
+      !binary "WC1IYXJ2ZXN0LUJveA==":
+      - !binary |-
+        cmFpbHMz
+      !binary "WC1IYXJ2ZXN0LUZl":
+      - !binary |-
+        bGIz
+      !binary "WC1IYXJ2ZXN0LURj":
+      - !binary |-
+        dnhueQ==
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
     body:
-      encoding: US-ASCII
-      string: ! '{"invoice":{"amount":"435.5","client_id":1267814,"client_key":"298e5a523a9640057c07c79621fb2dc4e5ff5b3b","created_at":"2012-09-30T04:07:56Z","created_by_id":null,"currency":"United
-        States Dollars - USD","discount":null,"discount_amount":"0.0","due_amount":"435.5","due_at":"2012-10-30","due_at_human_format":"net
-        30","estimate_id":null,"id":1882548,"issued_at":"2012-09-30","notes":"","number":"117","period_end":null,"period_start":null,"purchase_order":"","recurring_invoice_id":46928,"retainer_id":null,"state":"draft","subject":"","tax":"8.875","tax2":null,"tax2_amount":"0.0","tax_amount":"35.5","updated_at":"2012-09-30T04:07:56Z","csv_line_items":"kind,description,quantity,unit_price,amount,taxed,taxed2,project_id\nProduct,Widget
-        1,2.00,100.00,200.0,true,false,\nProduct,Widget 2,1.00,200.00,200.0,true,false,\n"}}'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA5WUTW+jMBCG7/0ViLOdGAcCqQi9VHteqa1W2kvl4EnqLZis
+        baLm3+8A4SubbbUXjGeed2zNh9OHj7LwTmCsqvTWDxbM90DnlVT6sPVfnr/R
+        xH/I7lKlT5XKIbvzvFSUVa2d585H2PoSclWKws/CVbSI0mXnbLm8UKAdVfKC
+        Ku3gAMbPAr6OkyBMlwMx5d/hnPFNApGI+Eps1iFjUZyzOI83ax7sd1zmIUT7
+        fbRb7YYQjaiNYUA4kFQM98OtUyX4GWcBp2xDV+yZhfcsvo/WP1E/CGb63fnv
+        e3taFVvfmRqDjcKW7LS1MZi7c/aiFXq8J4eA9R6rohDGetR7eXpEXU81Eqls
+        fiOZ85N6aKagt6vAFmwU0EkxZA3008KNwMhPk3hJYMAwgRd6StK3uhSa7itT
+        ol2D80Zs7ms0YLEmGPSrJE+4Vnejl5KER2GSLnvC2vq6/tPaI9gTLa8rrBGe
+        1K2tpS53YLIgiNHa/TfmIxhVSQpaTiPPrzsyU4l1wrgvRS3VyWqTvwkLtDIS
+        D0dibmgYA00f4ZDSy2TeGLNwveGYmFvoJYYTSoP5qggTrtXZpq8zacTepctu
+        05rr3S/IHQr6v8bqxMd1wyWLJMaGQ09P8E/7vwEG8rO+n/h7/h941/Kjv8Xr
+        o/y/t2MUdPNvT7TARFGc/tJm70pLIsHmRh0dvq7kdy20U+5ManwfXo8GS0G6
+        4wneBGT35eRoqiZ9r0refTeVrHNHfih5wJEKCF8wRgLGmoU3C2myRPaisECu
+        cU6CgbuF42M0vzJahof+DwOrtR4aBgAA
     http_version: 
-  recorded_at: Tue, 30 Oct 2012 14:13:56 GMT
+  recorded_at: Tue, 30 Oct 2012 18:47:28 GMT
 recorded_with: VCR 2.2.5

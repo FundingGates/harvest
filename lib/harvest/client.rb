@@ -5,7 +5,7 @@ require_relative './person.rb'
 require_relative './me.rb'
 require_relative './company.rb'
 require_relative './error/harvest_error.rb'
-require 'json'
+require 'active_support/core_ext'
 
 module Harvest
   class Client < Delegator
@@ -22,34 +22,41 @@ module Harvest
     end
 
     def get(path, query={})
-      response = JSON.parse(super(path, query))
-      if response.is_a?(Hash) && response.has_key?("error")
-        exception = HarvestError 
-        if %w(invalid_token invalid_grant).include?(response['error'])
-          exception = AuthorizationFailure
+      xml = super(path, query)
+      begin
+        response = Hash.from_xml(xml)
+      rescue REXML::ParseException
+        response = JSON.parse(xml)
+        if response.has_key?("error")
+          exception = HarvestError 
+          if %w(invalid_token invalid_grant).include?(response['error'])
+            exception = AuthorizationFailure
+          end
+          raise exception, response["error_description"]
         end
-        raise exception, response["error_description"]
       end
       response
     end
 
     def who_am_i?
-      me = get('account/who_am_i')["user"]
+      me = get('account/who_am_i')["hash"]["user"]
       Harvest::Me.new(me)
     end
 
     def people
-      people = get('people')
+      people = get('people')["users"]
       people = [people] unless people.is_a?(Array)
-      people.map { |p| Harvest::Person.new(p["user"]) }
+      people.map { |p| Harvest::Person.new(p) }
     end
 
     def company
-      Harvest::Company.new(get('account/who_am_i')["company"])
+      company = get('account/who_am_i')["hash"]["company"]
+      Harvest::Company.new(company)
     end
 
     def invoices(query = {})
-      get('invoices', query).map { |i| Harvest::Invoice.new(i["invoices"]) }
+      invoices = get('invoices', query)["invoices"]
+      invoices.map { |i| Harvest::Invoice.new(i) }
     end
 
     def invoice(id)
@@ -57,13 +64,14 @@ module Harvest
         attributes = get("invoices/#{id}")["invoice"]
         attributes.delete("csv_line_items")
         Harvest::Invoice.new(attributes)
-      rescue JSON::ParserError
+      rescue NoMethodError
         raise Harvest::InvoiceNotFound
       end
     end
 
     def customers(query = {})
-      get('clients', query).map { |c| Harvest::Customer.new(c["client"]) }
+      customers = get('clients', query)["clients"]
+      customers.map { |c| Harvest::Customer.new(c) }
     end
 
     def customer(id)

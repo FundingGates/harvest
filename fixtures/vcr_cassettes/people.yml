@@ -8,7 +8,7 @@ http_interactions:
       string: !binary ""
     headers:
       Accept:
-      - application/json
+      - application/xml
       Accept-Encoding:
       - gzip, deflate
       Content-Length:
@@ -20,55 +20,103 @@ http_interactions:
   response:
     status:
       code: 200
-      message: OK
+      message: !binary |-
+        T0s=
     headers:
-      Server:
-      - nginx
-      Date:
-      - Tue, 30 Oct 2012 15:28:50 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Status:
-      - '200'
-      X-Powered-By:
-      - Phusion Passenger (mod_rails/mod_rack)
-      Cache-Control:
-      - private, no-store, no-cache, max-age=0, must-revalidate
-      X-Frame-Options:
-      - SAMEORIGIN
-      Access-Control-Allow-Origin:
-      - http://localhost:3000
-      Access-Control-Expose-Headers:
-      - X-Served-From,X-Company-Version,X-Asked-With-Method
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept
-      Etag:
-      - ! '"019f4fa45dda7371d973aeb98d3aa28d"'
-      Access-Control-Max-Age:
-      - '1200'
-      X-Served-From:
-      - http://api.harvestapp.com/people
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
-      Set-Cookie:
-      - _harvest_sess=BAh7B0kiD3Nlc3Npb25faWQGOgZFRiIlZDVlYmIyYTEzOGU5N2JjMThkYzg5ZGJmMDA2ZWMxYjNJIgpmbGFzaAY7AEZJQzolQWN0aW9uRGlzcGF0Y2g6OkZsYXNoOjpGbGFzaEhhc2h7BjoLbm90aWNlSSIBfk1heGltdW0gbnVtYmVyIG9mIHVzZXJzIHJlYWNoZWQuICBUbyBhZGQgYW5vdGhlciB1c2VyLCBwbGVhc2UgPGEgaHJlZj0nL2NvbXBhbnkvZWRpdF9wbGFuJz51cGdyYWRlIG9yIGN1c3RvbWl6ZSB5b3VyIHBsYW48L2E%2BLgY7AEYGOgpAdXNlZG86CFNldAY6CkBoYXNoewY7B1Q%3D--49402ec9a2bd014aa4855c2f87387cefd0935a41;
-        domain=.harvestapp.com; path=/; HttpOnly
-      X-Runtime:
-      - '0.341444'
-      X-Harvest-Box:
-      - rails3
-      X-Harvest-Fe:
-      - lb4
-      X-Harvest-Dc:
-      - vxny
+      !binary "U2VydmVy":
+      - !binary |-
+        bmdpbng=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VHVlLCAzMCBPY3QgMjAxMiAxODo0NzoxMiBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24veG1sOyBjaGFyc2V0PXV0Zi04
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+      !binary "U3RhdHVz":
+      - !binary |-
+        MjAw
+      !binary "WC1Qb3dlcmVkLUJ5":
+      - !binary |-
+        UGh1c2lvbiBQYXNzZW5nZXIgKG1vZF9yYWlscy9tb2RfcmFjayk=
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        cHJpdmF0ZSwgbm8tc3RvcmUsIG5vLWNhY2hlLCBtYXgtYWdlPTAsIG11c3Qt
+        cmV2YWxpZGF0ZQ==
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
+      - !binary |-
+        aHR0cDovL2xvY2FsaG9zdDozMDAw
+      !binary "QWNjZXNzLUNvbnRyb2wtRXhwb3NlLUhlYWRlcnM=":
+      - !binary |-
+        WC1TZXJ2ZWQtRnJvbSxYLUNvbXBhbnktVmVyc2lvbixYLUFza2VkLVdpdGgt
+        TWV0aG9k
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctSGVhZGVycw==":
+      - !binary |-
+        Q29udGVudC1UeXBlLEFjY2VwdA==
+      !binary "QWNjZXNzLUNvbnRyb2wtTWF4LUFnZQ==":
+      - !binary |-
+        MTIwMA==
+      !binary "WC1TZXJ2ZWQtRnJvbQ==":
+      - !binary |-
+        aHR0cDovL2FwaS5oYXJ2ZXN0YXBwLmNvbS9wZW9wbGU=
+      !binary "WC1VYS1Db21wYXRpYmxl":
+      - !binary |-
+        SUU9RWRnZSxjaHJvbWU9MQ==
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        X2hhcnZlc3Rfc2Vzcz1CQWg3QjBraUQzTmxjM05wYjI1ZmFXUUdPZ1pGUmlJ
+        bE9ETTJZMll5T0RnMU1EUmxPRE01Wm1VNE9EY3dNVFZsT1dKaU4ySmhORFpK
+        SWdwbWJHRnphQVk3QUVaSlF6b2xRV04wYVc5dVJHbHpjR0YwWTJnNk9rWnNZ
+        WE5vT2pwR2JHRnphRWhoYzJoN0Jqb0xibTkwYVdObFNTSUJmazFoZUdsdGRX
+        MGdiblZ0WW1WeUlHOW1JSFZ6WlhKeklISmxZV05vWldRdUlDQlVieUJoWkdR
+        Z1lXNXZkR2hsY2lCMWMyVnlMQ0J3YkdWaGMyVWdQR0VnYUhKbFpqMG5MMk52
+        YlhCaGJua3ZaV1JwZEY5d2JHRnVKejUxY0dkeVlXUmxJRzl5SUdOMWMzUnZi
+        V2w2WlNCNWIzVnlJSEJzWVc0OEwyRSUyQkxnWTdBRVlHT2dwQWRYTmxaRzg2
+        Q0ZObGRBWTZDa0JvWVhOb2V3WTdCMVElM0QtLTUxODBmNTNjYmNmZDM1ZGQ5
+        OTk3ZDg0ZTQ3ZWIxZTYzY2I3OGY5ZDA7IGRvbWFpbj0uaGFydmVzdGFwcC5j
+        b207IHBhdGg9LzsgSHR0cE9ubHk=
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4xMDk2NTc=
+      !binary "WC1IYXJ2ZXN0LUJveA==":
+      - !binary |-
+        cmFpbHM0
+      !binary "WC1IYXJ2ZXN0LUZl":
+      - !binary |-
+        bGI0
+      !binary "WC1IYXJ2ZXN0LURj":
+      - !binary |-
+        dnhueQ==
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
     body:
-      encoding: US-ASCII
-      string: ! '[{"user":{"cache_version":98863312,"created_at":"2012-09-27T21:14:38Z","default_expense_category_id":null,"default_expense_project_id":null,"default_hourly_rate":null,"default_task_id":null,"default_time_project_id":null,"department":null,"duplicate_timesheet_wants_notes":true,"email":"accountingpackages@fundinggates.com","email_after_submit":true,"first_name":"Harvest","first_timer":false,"has_access_to_all_future_projects":false,"id":402196,"identity_url":null,"is_active":true,"is_admin":true,"is_contractor":false,"last_name":"App","opensocial_identifier":null,"password_change_required":false,"preferred_approval_screen":"timeframe","preferred_entry_method":"daily","preferred_project_status_reports_screen":"active","telephone":"","timezone":"Eastern
-        Time (US & Canada)","twitter_username":null,"updated_at":"2012-10-29T17:42:15Z","wants_newsletter":true,"wants_timesheet_duplication":false,"wants_weekly_digest":true,"weekly_digest_sent_on":null}}]'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA5WWwXLTMBCG7zyFxwcGDmriUGgbHBeGgeFOeuG2tdeJqCwZ
+        ad00PD2rRE5sNw70FFv7/59W2rWU9PapUtEjWieNXsTJxTSOUOemkHq1iO+W
+        38R1fJu9ShvHkoi2NS5isBa2cfYqinbD/oEfc8jXKAIpKKUmXKGNs2k66cVb
+        j0UgLARQMBT8SrLCOJtNk5mY3ojZ1XKWzJPL+bvrnww5GAKhwBIaRQKfatQO
+        Rc7hlbFbIYtBDpGWahGTbRieTs74Rsi1Nb8wp5eCj7YBd20aq7bC8sTt4jGX
+        FagRYEc/IBG4h/9NK2iHBN7yly5w4DkQa7BUoaahqx1vhU2tpN/1HcitEUls
+        QJMT2hC2rXZvjELQceY5TDlvCmisQKoM8tw0mriPa8gfYIXuU9lo39crBriL
+        3FTpZC/t2ASUhFa45r6SdDqJ57oAKKV1JDRUmH0H+4iO0klnrCvy6dshvgTl
+        sLXsFMGzBid4OeicICNAKVE21NjD9rsR0j99gf+s4tnldJbcfEgnh7rKgksn
+        aSu4CfuV7UZasZ+W5COe3sBDuCMvKqnH1T56FOdGk2WCGdvBnib4FLR1+FzX
+        6eT4ug8b/7WaXIIS+wWVkgvUW+hJSbDX4NzG2ELka9ArFBZ/N9JiMZLgmLyl
+        WSzRWn/O1VyqR57R8cmHOvNdUVpOmxmjoiGEc+WDrUJamyIruHm3XXcvOrS2
+        37cjoMZxnrWx/LWFifZV7MLO6/d0QoX12mjkPT0+hxiv749//cr1QaujJQ9E
+        b+5+RK+hqj9GX0BDAW/Z2AqDbyPJf4/+PvJV7VduGA2mpi7O3j7JVMxulsnV
+        /HI2T97z7XM0BEI4e3DjFPoZTnfwUNUzHw+y9nA7Xp/Dtjnj6DE3iA98VRSS
+        Dz06l1NP2CK6Y8Jxe4hDQn75g+vgpHz332Cy/3Ow/+Wj5i+Nu2ZXawgAAA==
     http_version: 
-  recorded_at: Tue, 30 Oct 2012 15:29:04 GMT
+  recorded_at: Tue, 30 Oct 2012 18:47:27 GMT
 recorded_with: VCR 2.2.5

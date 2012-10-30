@@ -60,7 +60,7 @@ describe Harvest::Client do
       VCR.use_cassette('invoice_query_params') do
         cutoff = Time.utc(2012, 10, 1)
         invoices = subject.invoices(updated_since: cutoff)
-        expect { invoices.delete_if { |inv| Time.parse(inv.updated_at) < cutoff } }.to_not change(invoices, :length)
+        expect { invoices.delete_if { |inv| inv.updated_at < cutoff } }.to_not change(invoices, :length)
       end
     end
   end
@@ -69,7 +69,8 @@ describe Harvest::Client do
     it 'returns an invoice from id' do
       VCR.use_cassette('invoice') do
         invoice = subject.invoice('1882548')
-        invoice.amount.should == '435.5'
+        invoice.amount.should == 435.5
+        invoice.updated_at.should be_a_kind_of Time
       end
     end
 
@@ -92,7 +93,7 @@ describe Harvest::Client do
       VCR.use_cassette('customer_query_params') do
         cutoff = Time.utc(2012, 10, 1)
         customers = subject.customers(updated_since: cutoff)
-        expect { customers.delete_if { |inv| Time.parse(inv.updated_at) < cutoff } }.to_not change(customers, :length)
+        expect { customers.delete_if { |inv| inv.updated_at < cutoff } }.to_not change(customers, :length)
       end
     end
   end
