@@ -8,17 +8,9 @@ require_relative './error/harvest_error.rb'
 require 'active_support/core_ext'
 
 module Harvest
-  class Client < Delegator
+  class Client < SimpleDelegator
     def initialize(oauth_token)
-      @client = HClient.new(access_token: oauth_token)
-    end
-
-    def __getobj__
-      @client
-    end
-
-    def __setobj__(obj)
-      @client = obj
+      super(HClient.new(access_token: oauth_token))
     end
 
     def get(path, query={})
