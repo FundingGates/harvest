@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.harvestapp.com/account/who_am_i?access_token=/TMzjL4ZB2MNuxwe9F3DbsuETe4iIx0B8KpW39q6tDy86EXHWhvH1/N44ZHOXNmOzA22sOcxGq87x/2CZJEoRA==
+    uri: https://api.harvestapp.com/account/who_am_i?access_token=k+N9KDktMfy24Y5ciTaqY4EGIP0vWJiLqUpw3ivcwQmMXSXIwn6dGG+EIskaTK+dASAqhyekWRe7Yy/wg0sJcg==
     body:
       encoding: ASCII-8BIT
       string: !binary ""
@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 05 Oct 2012 14:46:13 GMT
+      - Tue, 30 Oct 2012 15:28:49 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -45,7 +45,7 @@ http_interactions:
       Access-Control-Allow-Headers:
       - Content-Type,Accept
       Etag:
-      - ! '"f61ab4bbdd3e5ee4fcee65c72356fcea"'
+      - ! '"f19a274789ca7a45f3917d405281d2f3"'
       Access-Control-Max-Age:
       - '1200'
       X-Served-From:
@@ -53,21 +53,21 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Set-Cookie:
-      - _harvest_sess=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlNzcyMWZhMjQ5MTY2ODc0YzQyYWM0YjczYjFiNjY4NGE%3D--06ac960579643bc572af3b10e0b03adf3840b8de;
+      - _harvest_sess=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlNWE4MDA4MDI1MThmMDkzYjg4YTRkZGNjNGZlZTU4N2Q%3D--5ef504bdfe14d7c7fb7c324fcac9fdf42b4d6aa1;
         domain=.harvestapp.com; path=/; HttpOnly
       X-Runtime:
-      - '0.064584'
+      - '0.063279'
       X-Harvest-Box:
-      - rails7
+      - rails5
       X-Harvest-Fe:
-      - lb1
+      - lb4
       X-Harvest-Dc:
       - vxny
     body:
       encoding: US-ASCII
       string: ! '{"company":{"base_uri":"https://fundinggates.harvestapp.com","full_domain":"fundinggates.harvestapp.com","name":"Funding
-        Gates","active":true,"week_start_day":"Monday","time_format":"decimal","decimal_symbol":".","color_scheme":"orange","thousands_separator":","},"user":{"timezone":"Eastern
+        Gates","active":true,"week_start_day":"Monday","time_format":"decimal","clock":"12h","decimal_symbol":".","color_scheme":"orange","modules":{"expenses":true,"invoices":true,"estimates":true,"approval":false},"thousands_separator":","},"user":{"timezone":"Eastern
         Time (US & Canada)","timezone_utc_offset":-14400,"id":402196,"email":"accountingpackages@fundinggates.com","admin":true,"first_name":"Harvest","last_name":"App","avatar_url":"https://fundinggates.harvestapp.com/images/profile_images/big_ben.png","project_manager":{"is_project_manager":false,"can_see_rates":true,"can_create_projects":true,"can_create_invoices":true},"timestamp_timers":false}}'
     http_version: 
-  recorded_at: Fri, 05 Oct 2012 14:46:15 GMT
+  recorded_at: Tue, 30 Oct 2012 15:29:04 GMT
 recorded_with: VCR 2.2.5

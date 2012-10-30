@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.harvestapp.com/invoices/1882548?access_token=/TMzjL4ZB2MNuxwe9F3DbsuETe4iIx0B8KpW39q6tDy86EXHWhvH1/N44ZHOXNmOzA22sOcxGq87x/2CZJEoRA==
+    uri: https://api.harvestapp.com/invoices/1882548?access_token=k+N9KDktMfy24Y5ciTaqY4EGIP0vWJiLqUpw3ivcwQmMXSXIwn6dGG+EIskaTK+dASAqhyekWRe7Yy/wg0sJcg==
     body:
       encoding: ASCII-8BIT
       string: !binary ""
@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 05 Oct 2012 14:44:03 GMT
+      - Tue, 30 Oct 2012 14:13:41 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -55,14 +55,14 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Set-Cookie:
-      - _harvest_sess=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlOTg3NWVhYzU2MDhjOTlmZGI0NmYyMGUxZDU2MmRiMGI%3D--34842393946c13906aeee794f6c59ad2e5ef3391;
+      - _harvest_sess=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlNjJmNjFlNDc3MTRjODM1OTQ3YzMwNjc5NGQ4NmNhYWY%3D--ef693bdbc4d8ad3c4b191a35197519e9acd9b412;
         domain=.harvestapp.com; path=/; HttpOnly
       X-Runtime:
-      - '0.059261'
+      - '0.298502'
       X-Harvest-Box:
-      - rails3
+      - rails7
       X-Harvest-Fe:
-      - lb1
+      - lb4
       X-Harvest-Dc:
       - vxny
     body:
@@ -72,5 +72,5 @@ http_interactions:
         30","estimate_id":null,"id":1882548,"issued_at":"2012-09-30","notes":"","number":"117","period_end":null,"period_start":null,"purchase_order":"","recurring_invoice_id":46928,"retainer_id":null,"state":"draft","subject":"","tax":"8.875","tax2":null,"tax2_amount":"0.0","tax_amount":"35.5","updated_at":"2012-09-30T04:07:56Z","csv_line_items":"kind,description,quantity,unit_price,amount,taxed,taxed2,project_id\nProduct,Widget
         1,2.00,100.00,200.0,true,false,\nProduct,Widget 2,1.00,200.00,200.0,true,false,\n"}}'
     http_version: 
-  recorded_at: Fri, 05 Oct 2012 14:44:05 GMT
+  recorded_at: Tue, 30 Oct 2012 14:13:56 GMT
 recorded_with: VCR 2.2.5

@@ -1,6 +1,6 @@
-require 'ostruct'
+require_relative './harvest_data'
 
 module Harvest
-  class Customer < OpenStruct
+  class Customer < HarvestData
   end
 end

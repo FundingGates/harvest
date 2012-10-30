@@ -2,6 +2,7 @@ require_relative './hclient.rb'
 require_relative './invoice.rb'
 require_relative './customer.rb'
 require_relative './person.rb'
+require_relative './me.rb'
 require_relative './company.rb'
 require_relative './error/harvest_error.rb'
 require 'json'
@@ -33,7 +34,8 @@ module Harvest
     end
 
     def who_am_i?
-      Harvest::Person.new(get('account/who_am_i')["user"])
+      me = get('account/who_am_i')["user"]
+      Harvest::Me.new(me)
     end
 
     def people
@@ -52,7 +54,9 @@ module Harvest
 
     def invoice(id)
       begin
-        Harvest::Invoice.new(get("invoices/#{id}")["invoice"])
+        attributes = get("invoices/#{id}")["invoice"]
+        attributes.delete("csv_line_items")
+        Harvest::Invoice.new(attributes)
       rescue JSON::ParserError
         raise Harvest::InvoiceNotFound
       end
@@ -63,7 +67,8 @@ module Harvest
     end
 
     def customer(id)
-      Harvest::Customer.new(get("clients/#{id}")["client"])
+      attributes = get("clients/#{id}")["client"]
+      Harvest::Customer.new(attributes)
     end
   end
 end

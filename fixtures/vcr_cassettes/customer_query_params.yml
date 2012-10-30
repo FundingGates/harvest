@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.harvestapp.com/clients?access_token=htRN5eZXkWqrhGlvrqXNOtnXd8VyMfWw1u/J3zZWRnvb+ffKdj64CiNqHtOLLUJCBgFc7y312kcLzV+TCYkfMQ==&updated_since=2012-10-01%2000:00:00%20UTC
+    uri: https://api.harvestapp.com/clients?access_token=k+N9KDktMfy24Y5ciTaqY4EGIP0vWJiLqUpw3ivcwQmMXSXIwn6dGG+EIskaTK+dASAqhyekWRe7Yy/wg0sJcg==&updated_since=2012-10-01%2000:00:00%20UTC
     body:
       encoding: ASCII-8BIT
       string: !binary ""
@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 29 Oct 2012 20:12:40 GMT
+      - Tue, 30 Oct 2012 15:28:52 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -47,7 +47,7 @@ http_interactions:
       Access-Control-Allow-Headers:
       - Content-Type,Accept
       Etag:
-      - ! '"cb09c4aa08cd7eff96c456d4d4ff9da4"'
+      - ! '"3ebec18a4c8019f6a2c4cf18eaa092cc"'
       Access-Control-Max-Age:
       - '1200'
       X-Served-From:
@@ -55,24 +55,24 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Set-Cookie:
-      - _harvest_sess=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlYzU4ZDJkYWU0MDU1NWY2Yjc2YmJjMzIyMWIwNWE2ZDY%3D--870fc6f05a9069fcb8ee0061428bf147b754c0f5;
+      - _harvest_sess=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlYTljZTAwNTgyZGQ1ZDg3NzdjNjhmYjM0ZmZlYzFjMzM%3D--5ced983c2a9041f2af7262d0dafc617680afa5b1;
         domain=.harvestapp.com; path=/; HttpOnly
       X-Runtime:
-      - '0.053432'
+      - '0.048701'
       X-Harvest-Box:
-      - rails3
+      - rails7
       X-Harvest-Fe:
-      - lb3
+      - lb4
       X-Harvest-Dc:
       - vxny
     body:
       encoding: US-ASCII
-      string: ! '[{"client":{"active":true,"cache_version":2582959904,"created_at":"2012-10-11T01:58:37Z","currency":"United
+      string: ! '[{"client":{"active":true,"cache_version":1168697696,"created_at":"2012-10-11T01:58:37Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1286136,"name":"Courtney Concepts","updated_at":"2012-10-11T01:58:37Z","currency_symbol":"$","details":"P.O.
-        Box 3537\r\nLa Habra, CA  90632","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3563124438,"created_at":"2012-10-17T22:34:09Z","currency":"United
+        Box 3537\r\nLa Habra, CA  90632","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3730965128,"created_at":"2012-10-17T22:34:09Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1296645,"name":"Platinum Pavers","updated_at":"2012-10-17T22:34:09Z","currency_symbol":"$","details":"9098
-        Central Avenue\r\nSan Jose, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":4240633192,"created_at":"2012-10-18T04:34:24Z","currency":"United
+        Central Avenue\r\nSan Jose, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1907755403,"created_at":"2012-10-18T04:34:24Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1296940,"name":"SJC Limo Ride","updated_at":"2012-10-18T04:34:24Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":null}}]'
     http_version: 
-  recorded_at: Mon, 29 Oct 2012 20:12:52 GMT
+  recorded_at: Tue, 30 Oct 2012 15:29:06 GMT
 recorded_with: VCR 2.2.5

@@ -3,7 +3,7 @@ require 'spec_helper'
 require 'time'
 
 describe Harvest::Client do
-  subject { Harvest::Client.new('htRN5eZXkWqrhGlvrqXNOtnXd8VyMfWw1u/J3zZWRnvb+ffKdj64CiNqHtOLLUJCBgFc7y312kcLzV+TCYkfMQ==') }
+  subject { Harvest::Client.new('k+N9KDktMfy24Y5ciTaqY4EGIP0vWJiLqUpw3ivcwQmMXSXIwn6dGG+EIskaTK+dASAqhyekWRe7Yy/wg0sJcg==') }
 
   describe '#new' do
     it 'delegates to the rest-core client' do

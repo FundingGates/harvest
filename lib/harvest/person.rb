@@ -1,6 +1,4 @@
-require 'ostruct'
-
 module Harvest
-  class Person < OpenStruct
+  class Person < HarvestData
   end
 end

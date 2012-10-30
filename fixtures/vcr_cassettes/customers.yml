@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.harvestapp.com/clients?access_token=/TMzjL4ZB2MNuxwe9F3DbsuETe4iIx0B8KpW39q6tDy86EXHWhvH1/N44ZHOXNmOzA22sOcxGq87x/2CZJEoRA==
+    uri: https://api.harvestapp.com/clients?access_token=k+N9KDktMfy24Y5ciTaqY4EGIP0vWJiLqUpw3ivcwQmMXSXIwn6dGG+EIskaTK+dASAqhyekWRe7Yy/wg0sJcg==
     body:
       encoding: ASCII-8BIT
       string: !binary ""
@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 05 Oct 2012 14:44:23 GMT
+      - Tue, 30 Oct 2012 15:28:51 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -47,7 +47,7 @@ http_interactions:
       Access-Control-Allow-Headers:
       - Content-Type,Accept
       Etag:
-      - ! '"14ca15e4ab187e26eb0df436f9f41de0"'
+      - ! '"624b3fa173dfaef48bd4fefa2a76702c"'
       Access-Control-Max-Age:
       - '1200'
       X-Served-From:
@@ -55,274 +55,279 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Set-Cookie:
-      - _harvest_sess=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlZGQ0ZGRiNjVhNWNhYjFiNGUzMDUxM2FmNmZjYjczZTU%3D--72fb3a11f80fd33bdc7ef6ebbe7fde61aae8f6fe;
+      - _harvest_sess=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlZmVkMDkwYjE3NTJhNjI2YWZkYWM0NWEyNWE5MTRmMzg%3D--f1d3dee45953187f078082b806898e0d9976c2a7;
         domain=.harvestapp.com; path=/; HttpOnly
       X-Runtime:
-      - '0.362496'
+      - '0.643968'
       X-Harvest-Box:
-      - rails1
+      - rails7
       X-Harvest-Fe:
-      - lb1
+      - lb3
       X-Harvest-Dc:
       - vxny
     body:
       encoding: US-ASCII
-      string: ! '[{"client":{"active":true,"cache_version":684571886,"created_at":"2012-09-30T20:26:12Z","currency":"United
+      string: ! '[{"client":{"active":true,"cache_version":2021233699,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268614,"name":"A Cavallo Violins,
         LLC","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":372341111,"created_at":"2012-09-30T20:11:07Z","currency":"United
-        States Dollars - USD","highrise_id":null,"id":1268583,"name":"Able Glass","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":386224162,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":721305103,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        States Dollars - USD","highrise_id":null,"id":1268583,"name":"Able Glass","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":835299139,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268631,"name":"Allison''s Resale
         Shop","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":4235313935,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}},{"client":{"active":true,"cache_version":3363258188,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268564,"name":"Amidon Enterprises","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"San
-        Jose, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1590085798,"created_at":"2012-09-29T23:08:59Z","currency":"United
+        Jose, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3155069998,"created_at":"2012-09-29T23:08:59Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1267868,"name":"Anchor Bar &
         Grill","updated_at":"2012-09-29T23:08:59Z","currency_symbol":"$","details":"65
-        Northridge Dr\r\nBuffalo, NY","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}},{"client":{"active":true,"cache_version":3540772093,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Northridge Dr\r\nBuffalo, NY","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}},{"client":{"active":true,"cache_version":3457548669,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268554,"name":"Apton Consulting","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"PO
-        Box 909099  El Paso, TX","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":4235009101,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        Box 909099  El Paso, TX","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2496731623,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268627,"name":"Athena''s Garden","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1768122338,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":567380292,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268628,"name":"Balli Trading
         Company","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2510563865,"created_at":"2012-09-29T23:40:05Z","currency":"United
-        States Dollars - USD","highrise_id":null,"id":1267878,"name":"Bay Alarm Company","updated_at":"2012-09-29T23:40:05Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}},{"client":{"active":true,"cache_version":550698795,"created_at":"2012-09-29T23:58:54Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1121059509,"created_at":"2012-09-29T23:40:05Z","currency":"United
+        States Dollars - USD","highrise_id":null,"id":1267878,"name":"Bay Alarm Company","updated_at":"2012-09-29T23:40:05Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}},{"client":{"active":true,"cache_version":3370354544,"created_at":"2012-09-29T23:58:54Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1267885,"name":"Be Connected,
-        Ltd","updated_at":"2012-09-29T23:58:54Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":344933636,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Ltd","updated_at":"2012-09-29T23:58:54Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2577403141,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268573,"name":"BioBridge LLC","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Tahoe
-        City, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3198568718,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        City, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":147560279,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268559,"name":"Brandenburg,
         Smith & Associates","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Tallahassee,
-        FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2072869884,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2100254599,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268561,"name":"Broudy & Associates","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Springfield,
-        PA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":626603074,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        PA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2496329403,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268584,"name":"Bruce Bauer
-        Lumber & Supply","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2809494804,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Lumber & Supply","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":4215644912,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268597,"name":"Byrn Mawr Law
         Group","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Bryn
-        Mawr, PA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3851543085,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Mawr, PA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1550455451,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268591,"name":"California Fresh
         Market","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Mountain
-        View, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3697126130,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        View, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1504656345,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268575,"name":"Cardiac Mariners","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Los
-        Gatos, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":4245131884,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Gatos, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":286934280,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268569,"name":"Carrasco Towing","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"San
-        Jose, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1023828164,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        Jose, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3283372701,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268629,"name":"Catahoula Cookie
         Company","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2157169638,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3574839659,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268588,"name":"Clark Plumbing,
         Heating & AC","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"South
-        Lake Tahoe, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1345164011,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        Lake Tahoe, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":137832132,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268620,"name":"Cobb Service
         Company","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2847826672,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1153143750,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268642,"name":"Cole Couture","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2660927255,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1168697696,"created_at":"2012-10-11T01:58:37Z","currency":"United
+        States Dollars - USD","highrise_id":null,"id":1286136,"name":"Courtney Concepts","updated_at":"2012-10-11T01:58:37Z","currency_symbol":"$","details":"P.O.
+        Box 3537\r\nLa Habra, CA  90632","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1780630164,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268619,"name":"Cuffco, Inc","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":493799321,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":221832845,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268578,"name":"Debbie Claussen
         Art","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Gladstone,
-        MO","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1517576648,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        MO","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":515959517,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268607,"name":"Doorways, Ltd","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"900
-        County Line Road Bryn Mawr, PA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3173661137,"created_at":"2012-09-29T23:38:42Z","currency":"United
+        County Line Road Bryn Mawr, PA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1033458765,"created_at":"2012-09-29T23:38:42Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1267877,"name":"Engineering
-        Research Company","updated_at":"2012-09-29T23:38:42Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}},{"client":{"active":true,"cache_version":687427025,"created_at":"2012-09-30T20:11:05Z","currency":"United
+        Research Company","updated_at":"2012-09-29T23:38:42Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}},{"client":{"active":true,"cache_version":3454837079,"created_at":"2012-09-30T20:11:05Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268550,"name":"Entre-ous Partners,
         LLC","updated_at":"2012-09-30T20:11:05Z","currency_symbol":"$","details":"9000
-        W Tennessee Ave Tallahassee FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3411984261,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        W Tennessee Ave Tallahassee FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":829186612,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268622,"name":"EO Systems Inc","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":656723590,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1308812750,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268560,"name":"Epoch Software
         Systems","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Palo
-        Alto, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3646286752,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Alto, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3687085570,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268581,"name":"Frankie, Johnnie
         & Luigi","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Mountain
-        View, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2529934385,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        View, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3893192748,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268593,"name":"Frementation
         Frenzy","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Palo
-        Alto, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":4158223402,"created_at":"2012-09-27T21:14:38Z","currency":"United
-        States Dollars - USD","highrise_id":null,"id":1265367,"name":"Funding Gates","updated_at":"2012-09-27T21:14:38Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":921520562,"created_at":"2012-09-30T20:02:05Z","currency":"United
+        Alto, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2990826949,"created_at":"2012-09-27T21:14:38Z","currency":"United
+        States Dollars - USD","highrise_id":null,"id":1265367,"name":"Funding Gates","updated_at":"2012-09-27T21:14:38Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2896342632,"created_at":"2012-09-30T20:02:05Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268545,"name":"G Force Motorsports","updated_at":"2012-09-30T20:02:05Z","currency_symbol":"$","details":"1809
-        El Camino Real \r\nNovato, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":372764554,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        El Camino Real \r\nNovato, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1505320177,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268641,"name":"Glasswork by
         Troy","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2353070671,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3828351930,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268579,"name":"Golden Light
-        Ceramics","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3271866949,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Ceramics","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":4212666657,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268567,"name":"Grape Avenue
         Storage","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Sunnyvale,
-        CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":389019802,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2296955258,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268613,"name":"Green Impact
         Gardeners","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":539957123,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1472956286,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268571,"name":"Hector''s Gardening","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"South
-        Lake Tahoe, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1909234217,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        Lake Tahoe, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2095355356,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268632,"name":"HH Endeavors","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":4133613705,"created_at":"2012-09-30T20:26:13Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3819517962,"created_at":"2012-09-30T20:26:13Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268644,"name":"Homebrew Den","updated_at":"2012-09-30T20:26:13Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1435726544,"created_at":"2012-09-30T20:26:13Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2434165783,"created_at":"2012-09-30T20:26:13Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268646,"name":"Honeytree Natural
         Foods, Inc","updated_at":"2012-09-30T20:26:13Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1121009008,"created_at":"2012-09-29T23:04:14Z","currency":"United
-        States Dollars - USD","highrise_id":null,"id":1267867,"name":"HRCA, Inc","updated_at":"2012-09-29T23:04:14Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}},{"client":{"active":true,"cache_version":3708684942,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":622888269,"created_at":"2012-09-29T23:04:14Z","currency":"United
+        States Dollars - USD","highrise_id":null,"id":1267867,"name":"HRCA, Inc","updated_at":"2012-09-29T23:04:14Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}},{"client":{"active":true,"cache_version":3270068072,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268553,"name":"Human Resources
         Business Ventures","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"1234
-        March Road","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":4014577313,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        March Road","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3823651958,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268640,"name":"Jackson Financial
         Group","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2522744692,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1482970233,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268582,"name":"Java Hut","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Kings
-        Beach, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3564491280,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Beach, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1386539979,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268556,"name":"Jim Beal & Associates","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Reno,
-        NV","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":334289670,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        NV","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":267177702,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268565,"name":"Joe''s Stone
         Crab Claws","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Miami,
-        FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1848640196,"created_at":"2012-09-30T20:26:11Z","currency":"United
+        FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3205466657,"created_at":"2012-09-30T20:26:11Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268606,"name":"John Fish &
         Sons Jewelers","updated_at":"2012-09-30T20:26:11Z","currency_symbol":"$","details":"1022
-        West Lancaster Ave Bryn Mawr, PA 19010","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3046431651,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        West Lancaster Ave Bryn Mawr, PA 19010","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2776240170,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268618,"name":"John McKelvey
         Jr. Landscape Company","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1761683367,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3031843693,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268617,"name":"Jude Plum Salon","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1282305240,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2437260250,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268576,"name":"JustRacing","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Los
-        Gatos, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3542291358,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        Gatos, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":4276995620,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268633,"name":"Kelley, King
         & Associates, P.A.","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":4200930290,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3192259237,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268555,"name":"L.J. Azevedo
         Consulting","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"South
-        Lake Tahoe, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":774440324,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Lake Tahoe, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":780563888,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268587,"name":"Lake Tahoe Specialty
         Stove & Fireplace","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Truckee,
-        CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2983964986,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3971474250,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268623,"name":"Law Firm of
         Scott T. Moorey","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1990672679,"created_at":"2012-09-29T22:48:32Z","currency":"United
-        States Dollars - USD","highrise_id":null,"id":1267858,"name":"Lee''s Art Supplies","updated_at":"2012-09-29T22:48:32Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}},{"client":{"active":true,"cache_version":752625800,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2779067879,"created_at":"2012-09-29T22:48:32Z","currency":"United
+        States Dollars - USD","highrise_id":null,"id":1267858,"name":"Lee''s Art Supplies","updated_at":"2012-09-29T22:48:32Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}},{"client":{"active":true,"cache_version":1482279701,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268557,"name":"Lester Solutions","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Tahoe
-        City, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":755333159,"created_at":"2012-09-30T20:26:13Z","currency":"United
+        City, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3079147466,"created_at":"2012-09-30T20:26:13Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268645,"name":"Lofty Pursuits","updated_at":"2012-09-30T20:26:13Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1282305731,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3876147089,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268580,"name":"Loma Pieta Pottery","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Tucson,
-        Arizona","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2658776383,"created_at":"2012-09-29T23:11:03Z","currency":"United
-        States Dollars - USD","highrise_id":null,"id":1267869,"name":"Mares Eat Oats","updated_at":"2012-09-29T23:11:03Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}},{"client":{"active":true,"cache_version":2691130795,"created_at":"2012-09-29T23:19:38Z","currency":"United
-        States Dollars - USD","highrise_id":null,"id":1267872,"name":"Marsh & Associates","updated_at":"2012-09-29T23:19:38Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}},{"client":{"active":true,"cache_version":1816515922,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Arizona","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1833626020,"created_at":"2012-09-29T23:11:03Z","currency":"United
+        States Dollars - USD","highrise_id":null,"id":1267869,"name":"Mares Eat Oats","updated_at":"2012-09-29T23:11:03Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}},{"client":{"active":true,"cache_version":179531474,"created_at":"2012-09-29T23:19:38Z","currency":"United
+        States Dollars - USD","highrise_id":null,"id":1267872,"name":"Marsh & Associates","updated_at":"2012-09-29T23:19:38Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}},{"client":{"active":true,"cache_version":669128651,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268596,"name":"Mexico Beach
         Fishing Charters","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Mexico
-        Beach, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":4120551794,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Beach, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2847599837,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268572,"name":"Misslelock,
         Inc","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Reno,
-        NV","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1969093469,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        NV","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2135874730,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268552,"name":"My eRecruiter,
         Inc","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"San
-        Francisco, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":859468800,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Francisco, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2235941457,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268589,"name":"Ness Construction","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Reno,
-        NV","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1310315736,"created_at":"2012-09-30T20:26:13Z","currency":"United
+        NV","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1777032595,"created_at":"2012-09-30T20:26:13Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268643,"name":"Notary Public
         Underwriters, Inc","updated_at":"2012-09-30T20:26:13Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2654834509,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1965166333,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268574,"name":"NovaRay Medical,
         Inc","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Newark,
-        CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2300896357,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":4277930736,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268621,"name":"Olivier & Associates
         LLC","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":161524149,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1855109463,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268577,"name":"Only Nature
         Pet Store","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Springfield,
-        PA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":4137514350,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        PA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3913077154,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268634,"name":"Out of the Attic,
         LLC","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3208121151,"created_at":"2012-09-29T23:16:55Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1811950571,"created_at":"2012-09-29T23:16:55Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1267871,"name":"Peet''s Coffee
-        Shop","updated_at":"2012-09-29T23:16:55Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}},{"client":{"active":true,"cache_version":2302099260,"created_at":"2012-09-29T23:59:15Z","currency":"United
-        States Dollars - USD","highrise_id":null,"id":1267886,"name":"ProQwest, Inc","updated_at":"2012-09-29T23:59:15Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":341273597,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        Shop","updated_at":"2012-09-29T23:16:55Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}},{"client":{"active":true,"cache_version":3730965128,"created_at":"2012-10-17T22:34:09Z","currency":"United
+        States Dollars - USD","highrise_id":null,"id":1296645,"name":"Platinum Pavers","updated_at":"2012-10-17T22:34:09Z","currency_symbol":"$","details":"9098
+        Central Avenue\r\nSan Jose, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2197663833,"created_at":"2012-09-29T23:59:15Z","currency":"United
+        States Dollars - USD","highrise_id":null,"id":1267886,"name":"ProQwest, Inc","updated_at":"2012-09-29T23:59:15Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2950054918,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268635,"name":"Quarter Moon
         Imports","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3764197381,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1121035253,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268636,"name":"Rae Roeder Realty","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1669213817,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3224357666,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268630,"name":"Railroad Square
         Art","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":676137469,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":787008601,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268625,"name":"RBD Group LLC","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3247581980,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":4216343882,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268558,"name":"Renovatech,
         Inc","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Mountain
-        View, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3900006285,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        View, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1252664462,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268637,"name":"Ribits Enchanted
         Cottage","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3543670155,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1953314645,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268595,"name":"RPA Tax Consultants","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Gladstone,
-        MO","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":633647682,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        MO","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":445413142,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268624,"name":"Sapphire Design
         Studios","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1835110989,"created_at":"2012-09-29T22:51:02Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":107244229,"created_at":"2012-09-29T22:51:02Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1267860,"name":"Scooby Doo Pet
-        Supplies","updated_at":"2012-09-29T22:51:02Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}},{"client":{"active":true,"cache_version":3254214388,"created_at":"2012-09-30T20:11:07Z","currency":"United
-        States Dollars - USD","highrise_id":null,"id":1268585,"name":"Select Windows","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3404327000,"created_at":"2012-09-29T19:55:02Z","currency":"United
-        States Dollars - USD","highrise_id":null,"id":1267814,"name":"Shalala","updated_at":"2012-09-29T19:55:02Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}},{"client":{"active":true,"cache_version":160543164,"created_at":"2012-09-30T20:26:13Z","currency":"United
+        Supplies","updated_at":"2012-09-29T22:51:02Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}},{"client":{"active":true,"cache_version":1832633108,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        States Dollars - USD","highrise_id":null,"id":1268585,"name":"Select Windows","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":146342818,"created_at":"2012-09-29T19:55:02Z","currency":"United
+        States Dollars - USD","highrise_id":null,"id":1267814,"name":"Shalala","updated_at":"2012-09-29T19:55:02Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}},{"client":{"active":true,"cache_version":3599834586,"created_at":"2012-09-30T20:26:13Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268647,"name":"Signature Art
         Gallery","updated_at":"2012-09-30T20:26:13Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3531239911,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1907755403,"created_at":"2012-10-18T04:34:24Z","currency":"United
+        States Dollars - USD","highrise_id":null,"id":1296940,"name":"SJC Limo Ride","updated_at":"2012-10-18T04:34:24Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":242257550,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268592,"name":"Stubbs Music
         School","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Tallahassee,
-        FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":4125320507,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":434223231,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268609,"name":"Suburban Hardware","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"836
-        W. Lancaster Ave Bryn Mawr, PA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1699775781,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        W. Lancaster Ave Bryn Mawr, PA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1054616534,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268563,"name":"Sunnyvale Lighting
         & Electric","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Sunnyvale,
-        CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":4187430124,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3526488262,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268638,"name":"Susan Gage,
         LMT","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2946185040,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":17709511,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268590,"name":"Tahoe City Lumber
         Company","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Tahoe
-        City, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2316624365,"created_at":"2012-09-29T23:14:38Z","currency":"United
+        City, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2978280852,"created_at":"2012-09-29T23:14:38Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1267870,"name":"Terri''s Sweet
-        Shop","updated_at":"2012-09-29T23:14:38Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}},{"client":{"active":true,"cache_version":1025735949,"created_at":"2012-09-30T20:26:12Z","currency":"United
-        States Dollars - USD","highrise_id":null,"id":1268608,"name":"The Bakery House","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3401657297,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        Shop","updated_at":"2012-09-29T23:14:38Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":"free_form"}},{"client":{"active":true,"cache_version":3932048309,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        States Dollars - USD","highrise_id":null,"id":1268608,"name":"The Bakery House","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3699246336,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268612,"name":"The Camera Shop","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1892271659,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2676624339,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268566,"name":"The Cracked
         Claw","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Aberdeen,
-        MD","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":4052213318,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        MD","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2764209464,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268639,"name":"The Grey Fox","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2775600888,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":621824478,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268626,"name":"The Other Side
         Vintage","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":313670158,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1496852553,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268562,"name":"The Purple Onion","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Gladstone,
-        MO","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3657773116,"created_at":"2012-09-30T20:11:07Z","currency":"United
-        States Dollars - USD","highrise_id":null,"id":1268586,"name":"The Screen Shop","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3599908165,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        MO","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2465518906,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        States Dollars - USD","highrise_id":null,"id":1268586,"name":"The Screen Shop","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3829029352,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268616,"name":"The Shear Touch","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2809476686,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1888229789,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268570,"name":"Thomasville
         Law Group","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Thomasville,
-        GA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2500507217,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        GA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":3790871379,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268568,"name":"Tony & Alba''s","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"San
-        Jose, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1436604840,"created_at":"2012-09-30T20:26:13Z","currency":"United
+        Jose, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1245134709,"created_at":"2012-09-30T20:26:13Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268648,"name":"Trail & Ski
         Shop, Inc.","updated_at":"2012-09-30T20:26:13Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1244861926,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":125241937,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268611,"name":"Training Inc
         Golf Fitness","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"22
-        N. Main Street Bryn Mawr, PA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2843479338,"created_at":"2012-09-30T20:00:24Z","currency":"United
+        N. Main Street Bryn Mawr, PA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":415657722,"created_at":"2012-09-30T20:00:24Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268544,"name":"Vance Refrigeration","updated_at":"2012-09-30T20:00:24Z","currency_symbol":"$","details":"1809
-        El Camino Real","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2487595732,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        El Camino Real","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1251048773,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268615,"name":"Vincent S. DiCioccio
         Attorney at Law","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"2748
-        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2244051343,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Capital Circle NE Tallahassee, FL","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":892064614,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268551,"name":"Western Automotive","updated_at":"2012-09-30T20:12:19Z","currency_symbol":"$","details":"San
-        Jose, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":504425038,"created_at":"2012-09-30T20:26:12Z","currency":"United
+        Jose, CA","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":2050356220,"created_at":"2012-09-30T20:26:12Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268610,"name":"Whitworth Construction","updated_at":"2012-09-30T20:26:12Z","currency_symbol":"$","details":"19
-        Merion Ave","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":1873907839,"created_at":"2012-09-30T20:11:07Z","currency":"United
+        Merion Ave","default_invoice_timeframe":null,"last_invoice_kind":null}},{"client":{"active":true,"cache_version":4253574041,"created_at":"2012-09-30T20:11:07Z","currency":"United
         States Dollars - USD","highrise_id":null,"id":1268594,"name":"Woodson & Barksdale
         Architects","updated_at":"2012-09-30T20:11:07Z","currency_symbol":"$","details":"Springfield,
         PA","default_invoice_timeframe":null,"last_invoice_kind":null}}]'
     http_version: 
-  recorded_at: Fri, 05 Oct 2012 14:44:26 GMT
+  recorded_at: Tue, 30 Oct 2012 15:29:06 GMT
 recorded_with: VCR 2.2.5

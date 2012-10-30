@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.harvestapp.com/invoices?access_token=htRN5eZXkWqrhGlvrqXNOtnXd8VyMfWw1u/J3zZWRnvb+ffKdj64CiNqHtOLLUJCBgFc7y312kcLzV+TCYkfMQ==&updated_since=2012-10-01%2000:00:00%20UTC
+    uri: https://api.harvestapp.com/invoices?access_token=k+N9KDktMfy24Y5ciTaqY4EGIP0vWJiLqUpw3ivcwQmMXSXIwn6dGG+EIskaTK+dASAqhyekWRe7Yy/wg0sJcg==&updated_since=2012-10-01%2000:00:00%20UTC
     body:
       encoding: ASCII-8BIT
       string: !binary ""
@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 29 Oct 2012 20:08:52 GMT
+      - Tue, 30 Oct 2012 15:28:51 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -55,14 +55,14 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Set-Cookie:
-      - _harvest_sess=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlZThkZmVmYjMzNjkxYmU0ZWNjYjU5ODFmNThlMDM0NmQ%3D--274548fcb0835ca5c1f708ff2da7d976c610cc6a;
+      - _harvest_sess=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiIlMGQ0ZDU5ZWE4ZDYzZjZiNzE1NzJlOGZjYjI3M2ZkNDU%3D--c598423e0ffdbf7916ff9feda58bcb1cd9208dd5;
         domain=.harvestapp.com; path=/; HttpOnly
       X-Runtime:
-      - '0.314789'
+      - '0.107702'
       X-Harvest-Box:
-      - rails7
+      - rails8
       X-Harvest-Fe:
-      - lb4
+      - lb3
       X-Harvest-Dc:
       - vxny
     body:
@@ -85,5 +85,5 @@ http_interactions:
         States Dollars - USD","discount":null,"discount_amount":"0.0","due_amount":"0.0","due_at":"2012-09-19","due_at_human_format":"net
         15","estimate_id":null,"id":1882092,"issued_at":"2012-09-04","notes":"","number":"101","period_end":null,"period_start":null,"purchase_order":"","recurring_invoice_id":null,"retainer_id":null,"state":"paid","subject":"","tax":"8.875","tax2":null,"tax2_amount":"0.0","tax_amount":"53.25","updated_at":"2012-10-16T23:01:32Z"}}]'
     http_version: 
-  recorded_at: Mon, 29 Oct 2012 20:09:04 GMT
+  recorded_at: Tue, 30 Oct 2012 15:29:05 GMT
 recorded_with: VCR 2.2.5

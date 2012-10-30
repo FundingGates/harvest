@@ -1,4 +1,4 @@
 module Harvest
-  class Company < OpenStruct
+  class Company < HarvestData
   end
 end

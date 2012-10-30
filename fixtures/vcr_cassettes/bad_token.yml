@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 05 Oct 2012 14:15:50 GMT
+      - Tue, 30 Oct 2012 15:28:49 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -45,11 +45,11 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       X-Runtime:
-      - '0.008009'
+      - '0.009529'
     body:
       encoding: US-ASCII
       string: ! '{"error":"invalid_token","error_description":"The access token provided
         is expired, revoked, malformed or invalid for other reasons."}'
     http_version: 
-  recorded_at: Fri, 05 Oct 2012 14:15:52 GMT
+  recorded_at: Tue, 30 Oct 2012 15:29:04 GMT
 recorded_with: VCR 2.2.5
