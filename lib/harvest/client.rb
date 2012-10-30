@@ -14,20 +14,24 @@ module Harvest
     end
 
     def get(path, query={})
-      xml = super(path, query)
+      body = super(path, query)
       begin
-        response = Hash.from_xml(xml)
+        response = Hash.from_xml(body)
       rescue REXML::ParseException
-        response = JSON.parse(xml)
-        if response.has_key?("error")
-          exception = HarvestError 
-          if %w(invalid_token invalid_grant).include?(response['error'])
-            exception = AuthorizationFailure
-          end
-          raise exception, response["error_description"]
-        end
+        response = JSON.parse(body)
+        check_response(response)
       end
       response
+    end
+
+    def check_response(response)
+      if response.has_key?("error")
+        exception = HarvestError
+        if %w(invalid_token invalid_grant).include?(response['error'])
+          exception = AuthorizationFailure
+        end
+        raise exception, response["error_description"]
+      end
     end
 
     def who_am_i?
