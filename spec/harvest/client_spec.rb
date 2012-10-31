@@ -28,6 +28,11 @@ describe Harvest::Client do
         me.email.should == 'accountingpackages@fundinggates.com'
       end
     end
+
+    it 'raises a HarvestError in the case of an invalid response body' do
+      subject.stub(:get) { "jibberish" }
+      expect { subject.who_am_i? }.to raise_error Harvest::ParserError
+    end
   end
 
   describe '#people' do
