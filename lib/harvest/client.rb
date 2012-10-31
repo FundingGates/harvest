@@ -13,36 +13,38 @@ module Harvest
       super(HClient.new(access_token: oauth_token))
     end
 
-    def get(path, query={})
-      body = super(path, query)
-      hash = parse_body(body)
-      check_response_for_errors(hash)
+    def get_data(path, opts = {})
+      query = opts.fetch(:query, {})
+      key = opts.fetch(:key, nil)
+
+      hash = get(path, query)
+      fetch_key(hash, key)
     end
 
     def who_am_i?
-      me = get('account/who_am_i').fetch("user")
+      me = get_data('account/who_am_i', key: "user")
       Harvest::Me.new(me)
     end
 
     def people
-      people = get('people').fetch("users")
+      people = get_data('people', key: "users")
       people = [people] unless people.is_a?(Array)
       people.map { |p| Harvest::Person.new(p) }
     end
 
     def company
-      company = get('account/who_am_i').fetch("company")
+      company = get_data('account/who_am_i', key: "company")
       Harvest::Company.new(company)
     end
 
     def invoices(query = {})
-      invoices = get('invoices', query).fetch("invoices")
+      invoices = get_data('invoices', query: query, key: "invoices")
       invoices.map { |i| Harvest::Invoice.new(i) }
     end
 
     def invoice(id)
       begin
-        attributes = get("invoices/#{id}").fetch("invoice")
+        attributes = get_data("invoices/#{id}", key: "invoice")
         attributes.delete("csv_line_items")
         Harvest::Invoice.new(attributes)
       rescue KeyError
@@ -51,16 +53,21 @@ module Harvest
     end
 
     def customers(query = {})
-      customers = get('clients', query).fetch("clients")
+      customers = get_data('clients', query: query, key: "clients")
       customers.map { |c| Harvest::Customer.new(c) }
     end
 
     def customer(id)
-      attributes = get("clients/#{id}").fetch("client")
+      attributes = get_data("clients/#{id}", key: "client")
       Harvest::Customer.new(attributes)
     end
 
     private
+    def get(path, query={})
+      body = super(path, query)
+      parse_body(body)
+    end
+
     def check_response_for_errors(response)
       if response.has_key?("error")
         exception = HarvestError
@@ -68,9 +75,6 @@ module Harvest
           exception = AuthorizationFailure
         end
         raise exception, response["error_description"]
-      end
-      if response.has_key? "hash"
-        response = response.fetch("hash")
       end
       response
     end
@@ -92,5 +96,20 @@ module Harvest
         raise ParserError
       end
     end
+
+    def fetch_key(hash, key)
+      response = check_response_for_errors(hash)
+      if response.has_key? "hash"
+        response = response.fetch("hash")
+      end
+      if response.has_key?("nil_classes")
+        return {}
+      elsif !key.nil?
+        response.fetch(key)
+      else
+        response
+      end
+    end
+
   end
 end

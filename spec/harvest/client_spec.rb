@@ -3,7 +3,7 @@ require 'spec_helper'
 require 'time'
 
 describe Harvest::Client do
-  subject { Harvest::Client.new('k+N9KDktMfy24Y5ciTaqY4EGIP0vWJiLqUpw3ivcwQmMXSXIwn6dGG+EIskaTK+dASAqhyekWRe7Yy/wg0sJcg==') }
+  subject { Harvest::Client.new('Zcgmf3RAu5HyTQBdewmSUR4cM3wAZKHmg+LukhgmnE1IOVsf+SuK+pVDkmj8hqlHdfm49I/T2gqP5xlJqBw4wg==') }
 
   describe '#new' do
     it 'delegates to the rest-core client' do
@@ -12,11 +12,11 @@ describe Harvest::Client do
     end
   end
 
-  describe '#get' do
+  describe '#get_data' do
     it 'raises an exception if Harvest returns an error' do
       VCR.use_cassette('bad_token') do
         client = Harvest::Client.new("bad-token")
-        expect { client.get('account/who_am_i') }.to raise_error(Harvest::AuthorizationFailure, /token provided is expired/)
+        expect { client.get_data('account/who_am_i') }.to raise_error(Harvest::AuthorizationFailure, /token provided is expired/)
       end
     end
   end
@@ -100,6 +100,14 @@ describe Harvest::Client do
         customers = subject.customers(updated_since: cutoff)
         expect { customers.delete_if { |inv| inv.updated_at < cutoff } }.to_not change(customers, :length)
       end
+    end
+
+    it 'updated since today' do
+      empty_response = %(<?xml version="1.0" encoding="UTF-8"?>
+                         <nil-classes type="array"/>)
+      subject.stub(:get) { empty_response }
+      customers = subject.customers(updated_since: '1-1-2011')
+      customers.should == []
     end
   end
 

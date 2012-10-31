@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.harvestapp.com/invoices?access_token=Zcgmf3RAu5HyTQBdewmSUR4cM3wAZKHmg+LukhgmnE1IOVsf+SuK+pVDkmj8hqlHdfm49I/T2gqP5xlJqBw4wg==&updated_since=2012-10-01%2000:00:00%20UTC
+    uri: https://api.harvestapp.com/clients?access_token=Zcgmf3RAu5HyTQBdewmSUR4cM3wAZKHmg+LukhgmnE1IOVsf+SuK+pVDkmj8hqlHdfm49I/T2gqP5xlJqBw4wg==&updated_since=2012-10-31%2018:09:38%20-0400
     body:
       encoding: ASCII-8BIT
       string: !binary ""
@@ -28,7 +28,7 @@ http_interactions:
         bmdpbng=
       !binary "RGF0ZQ==":
       - !binary |-
-        V2VkLCAzMSBPY3QgMjAxMiAyMTo1ODo1NyBHTVQ=
+        V2VkLCAzMSBPY3QgMjAxMiAyMjowOToyMCBHTVQ=
       !binary "Q29udGVudC1UeXBl":
       - !binary |-
         YXBwbGljYXRpb24veG1sOyBjaGFyc2V0PXV0Zi04
@@ -66,25 +66,25 @@ http_interactions:
         MTIwMA==
       !binary "WC1TZXJ2ZWQtRnJvbQ==":
       - !binary |-
-        aHR0cDovL2FwaS5oYXJ2ZXN0YXBwLmNvbS9pbnZvaWNlcw==
+        aHR0cDovL2FwaS5oYXJ2ZXN0YXBwLmNvbS9jbGllbnRz
       !binary "WC1VYS1Db21wYXRpYmxl":
       - !binary |-
         SUU9RWRnZSxjaHJvbWU9MQ==
       !binary "U2V0LUNvb2tpZQ==":
       - !binary |-
         X2hhcnZlc3Rfc2Vzcz1CQWg3QmtraUQzTmxjM05wYjI1ZmFXUUdPZ1pGUmlJ
-        bE1qTXlaRGd4WmpKaU1qRmxaams1TkRZMlpXSTBPRE0xTVRneU9EZ3lZalEl
-        M0QtLTllMWQxODg0MWViMWMzOGE5YTZmM2NhZTcxOGY5MjFlNzhhMGY5MDI7
+        bFpqbGhNbVEzTTJaa01qVTVaVEJoT0dOaE5HSXdaR00yTmpCalpUQTBOV1El
+        M0QtLWRhNzNhMmFjZDQ3YzliM2FkNWNlOGUyNzZlNmI4NWI4MTBjZGIyMGE7
         IGRvbWFpbj0uaGFydmVzdGFwcC5jb207IHBhdGg9LzsgSHR0cE9ubHk=
       !binary "WC1SdW50aW1l":
       - !binary |-
-        MC4yOTkyMTA=
+        MC4wODk2MTI=
       !binary "WC1IYXJ2ZXN0LUJveA==":
       - !binary |-
-        cmFpbHMy
+        cmFpbHMx
       !binary "WC1IYXJ2ZXN0LUZl":
       - !binary |-
-        bGI0
+        bGIz
       !binary "WC1IYXJ2ZXN0LURj":
       - !binary |-
         dnhueQ==
@@ -94,33 +94,8 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        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
+        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
     http_version: 
-  recorded_at: Wed, 31 Oct 2012 21:59:15 GMT
+  recorded_at: Wed, 31 Oct 2012 22:09:39 GMT
 recorded_with: VCR 2.2.5
