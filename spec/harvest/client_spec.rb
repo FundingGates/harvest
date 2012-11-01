@@ -12,15 +12,6 @@ describe Harvest::Client do
     end
   end
 
-  describe '#get_data' do
-    it 'raises an exception if Harvest returns an error' do
-      VCR.use_cassette('bad_token') do
-        client = Harvest::Client.new("bad-token")
-        expect { client.get_data('account/who_am_i') }.to raise_error(Harvest::AuthorizationFailure, /token provided is expired/)
-      end
-    end
-  end
-
   describe '#who_am_i?' do
     it 'retrieves the current user' do
       VCR.use_cassette('who_am_i') do
@@ -29,9 +20,11 @@ describe Harvest::Client do
       end
     end
 
-    it 'raises a HarvestError in the case of an invalid response body' do
-      subject.stub(:get) { "jibberish" }
-      expect { subject.who_am_i? }.to raise_error Harvest::ParserError
+    it 'raises an exception if Harvest returns an error' do
+      VCR.use_cassette('bad_token') do
+        client = Harvest::Client.new("bad-token")
+        expect { client.who_am_i? }.to raise_error(Harvest::AuthorizationFailure, /token provided is expired/)
+      end
     end
   end
 
@@ -100,14 +93,6 @@ describe Harvest::Client do
         customers = subject.customers(updated_since: cutoff)
         expect { customers.delete_if { |inv| inv.updated_at < cutoff } }.to_not change(customers, :length)
       end
-    end
-
-    it 'updated since today' do
-      empty_response = %(<?xml version="1.0" encoding="UTF-8"?>
-                         <nil-classes type="array"/>)
-      subject.stub(:get) { empty_response }
-      customers = subject.customers(updated_since: '1-1-2011')
-      customers.should == []
     end
   end
 
