@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.harvestapp.com/clients/1268610?access_token=Zcgmf3RAu5HyTQBdewmSUR4cM3wAZKHmg+LukhgmnE1IOVsf+SuK+pVDkmj8hqlHdfm49I/T2gqP5xlJqBw4wg==
+    uri: https://api.harvestapp.com/clients/1268610?access_token=1wzL04XtJWcz9zeyvaiTb+f1qRYBayXG9kHUYKI01K0phuL6Z2TxGYowg1U1pT01QqZkbcC4U9zfuIqh4s3cFg==
     body:
       encoding: ASCII-8BIT
       string: !binary ""
@@ -28,7 +28,7 @@ http_interactions:
         bmdpbng=
       !binary "RGF0ZQ==":
       - !binary |-
-        V2VkLCAzMSBPY3QgMjAxMiAyMTo1ODo1OSBHTVQ=
+        RnJpLCAwMiBOb3YgMjAxMiAxNDo0MjoyNCBHTVQ=
       !binary "Q29udGVudC1UeXBl":
       - !binary |-
         YXBwbGljYXRpb24veG1sOyBjaGFyc2V0PXV0Zi04
@@ -73,15 +73,15 @@ http_interactions:
       !binary "U2V0LUNvb2tpZQ==":
       - !binary |-
         X2hhcnZlc3Rfc2Vzcz1CQWg3QmtraUQzTmxjM05wYjI1ZmFXUUdPZ1pGUmlJ
-        bFkyWTBPR0ptTnpOak1XUXdPVEk0TVRnNVlqYzJNakl6TVRJd056azROakEl
-        M0QtLTVjYzVkMWQ5NjkyYmY2Y2U0NjBiZmZiZGZhNzBiNjQxNTg5NTYwNTI7
+        bFptWTROR0UzT1dZeU9XWmlObUU1WVRaaU56aGpZV1JpTWpobE5UWXpaR00l
+        M0QtLWI4MWY4NDBmMTVmOGY2YWZhMTU1NTg5YzE4ZjYzOWJmZDk0YmM4ZGQ7
         IGRvbWFpbj0uaGFydmVzdGFwcC5jb207IHBhdGg9LzsgSHR0cE9ubHk=
       !binary "WC1SdW50aW1l":
       - !binary |-
-        MC4wODAyMzk=
+        MC4wNjEzMTI=
       !binary "WC1IYXJ2ZXN0LUJveA==":
       - !binary |-
-        cmFpbHM1
+        cmFpbHMy
       !binary "WC1IYXJ2ZXN0LUZl":
       - !binary |-
         bGI0
@@ -103,5 +103,5 @@ http_interactions:
         1GE5OIHS8mhJ3sB07/Hc+NeaxgNyFLV0DFWjMQPWhTgan3MM1opKXl3KXUlv
         KIU9rz5R5feNblD/4YLpx/0AHrlcT6ICAAA=
     http_version: 
-  recorded_at: Wed, 31 Oct 2012 21:59:17 GMT
+  recorded_at: Fri, 02 Nov 2012 14:42:48 GMT
 recorded_with: VCR 2.2.5

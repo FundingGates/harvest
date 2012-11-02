@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.harvestapp.com/invoices/abc123?access_token=Zcgmf3RAu5HyTQBdewmSUR4cM3wAZKHmg+LukhgmnE1IOVsf+SuK+pVDkmj8hqlHdfm49I/T2gqP5xlJqBw4wg==
+    uri: https://api.harvestapp.com/invoices/abc123?access_token=1wzL04XtJWcz9zeyvaiTb+f1qRYBayXG9kHUYKI01K0phuL6Z2TxGYowg1U1pT01QqZkbcC4U9zfuIqh4s3cFg==
     body:
       encoding: ASCII-8BIT
       string: !binary ""
@@ -28,7 +28,7 @@ http_interactions:
         bmdpbng=
       !binary "RGF0ZQ==":
       - !binary |-
-        V2VkLCAzMSBPY3QgMjAxMiAyMTo1ODo1NyBHTVQ=
+        RnJpLCAwMiBOb3YgMjAxMiAxNDo0MjoyMyBHTVQ=
       !binary "Q29udGVudC1UeXBl":
       - !binary |-
         dGV4dC9odG1s
@@ -46,7 +46,7 @@ http_interactions:
         UGh1c2lvbiBQYXNzZW5nZXIgKG1vZF9yYWlscy9tb2RfcmFjayk=
       !binary "WC1SdW50aW1l":
       - !binary |-
-        MC4wNDQxNTY=
+        MC4wODcxMjQ=
       !binary "Q29udGVudC1FbmNvZGluZw==":
       - !binary |-
         Z3ppcA==
@@ -84,5 +84,5 @@ http_interactions:
         4C2NBfsjDj3AuykpphmD1gKWTGiL805WCloTnzm+/83AabgLzffMsv1xtq7C
         bkjthokwdNOCg99NDL2UbjbT0JXfNHSTf/37D+f0dToWDAAA
     http_version: 
-  recorded_at: Wed, 31 Oct 2012 21:59:16 GMT
+  recorded_at: Fri, 02 Nov 2012 14:42:47 GMT
 recorded_with: VCR 2.2.5
