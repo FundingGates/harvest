@@ -53,6 +53,11 @@ module Harvest
       Harvest::Customer.new(attributes)
     end
 
+    def contacts
+      contacts = get_data('clients', key: 'clients')
+      contacts.map { |contact| Harvest::Person.new(contact) }
+    end
+
     def contacts_for_customer(customer_id)
       contacts = get_data("clients/#{customer_id}/contacts", key: "contacts")
       contacts.map { |contact| Harvest::Person.new(contact) }

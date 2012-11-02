@@ -93,5 +93,17 @@ describe Harvest::Client do
       contacts = subject.contacts_for_customer('1268610')
       contacts.should == []
     end
+
+    it 'without contacts... again' do
+      contacts = subject.contacts_for_customer('1268554')
+      contacts.should == []
+    end
+  end
+
+  describe '#contacts' do
+    it 'retrieves an array of contacts' do
+      contacts = subject.contacts
+      contacts.first.should be_a_kind_of Harvest::Person
+    end
   end
 end
