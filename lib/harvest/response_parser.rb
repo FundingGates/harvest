@@ -42,10 +42,9 @@ module Harvest
 
     def self.fetch_key(hash, key)
       response = check_response_for_errors(hash)
-      if response.has_key? "hash"
-        response = response.fetch("hash")
-      end
-      if !key.nil?
+      response = response.fetch("hash") if response.has_key? "hash"
+
+      unless key.nil? || response.empty?
         response.fetch(key)
       else
         response

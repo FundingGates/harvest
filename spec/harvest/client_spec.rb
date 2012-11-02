@@ -3,7 +3,7 @@ require 'spec_helper'
 require 'time'
 
 describe Harvest::Client do
-  subject { Harvest::Client.new('Zcgmf3RAu5HyTQBdewmSUR4cM3wAZKHmg+LukhgmnE1IOVsf+SuK+pVDkmj8hqlHdfm49I/T2gqP5xlJqBw4wg==') }
+  subject { Harvest::Client.new('1wzL04XtJWcz9zeyvaiTb+f1qRYBayXG9kHUYKI01K0phuL6Z2TxGYowg1U1pT01QqZkbcC4U9zfuIqh4s3cFg==') }
 
   describe '#new' do
     it 'delegates to the rest-core client' do
@@ -101,6 +101,22 @@ describe Harvest::Client do
       VCR.use_cassette('customer') do
         customer = subject.customer('1268610')
         customer.name.should == "Whitworth Construction"
+      end
+    end
+  end
+
+  describe '#contacts_for_customer' do
+    it 'retrieves a contact for a customer' do
+      VCR.use_cassette('contacts_for_customer') do
+        contacts = subject.contacts_for_customer('1268614')
+        contacts.first.first_name.should == "Jordon"
+      end
+    end
+
+    it 'without contacts' do
+      VCR.use_cassette('customer_with_no_contacts') do
+        contacts = subject.contacts_for_customer('1268610')
+        contacts.should == []
       end
     end
   end
