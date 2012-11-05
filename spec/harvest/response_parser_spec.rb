@@ -3,12 +3,14 @@ include Harvest
 
 describe Harvest::ResponseParser do
   context "with XML" do
+    let(:headers) { { :response_headers => { "CONTENT_TYPE" => "text/xml" } } }
+
     it 'parses an empty response' do
       empty_response = %(
                          <?xml version="1.0" encoding="UTF-8"?>
                          <nil-classes type="array"/>
                         )
-      ResponseParser.parse(empty_response).should == {}
+      ResponseParser.parse(empty_response, headers).should == {}
     end
 
     it 'retrieves a key' do
@@ -19,14 +21,16 @@ describe Harvest::ResponseParser do
                    <test>baz</test>
                  </root>
                )
-      ResponseParser.parse(body, key: 'root').should == { "foo" => "bar", "test" => "baz" }
+      ResponseParser.parse(body, headers.merge(key: 'root')).should == { "foo" => "bar", "test" => "baz" }
     end
   end
 
   context "with JSON" do
+    let(:headers) { { :response_headers => { "CONTENT_TYPE" => "text/json" } } }
+
     it 'parses an empty response' do
       body = %( {} )
-      ResponseParser.parse(body).should == {}
+      ResponseParser.parse(body, headers).should == {}
     end
 
     it 'parses a basic document' do
@@ -36,7 +40,7 @@ describe Harvest::ResponseParser do
                  "test": "baz"
                }
               )
-      ResponseParser.parse(body).should == { "foo" => "bar", "test" => "baz" }
+      ResponseParser.parse(body, headers).should == { "foo" => "bar", "test" => "baz" }
     end
 
     it 'fetches a key' do
@@ -48,7 +52,7 @@ describe Harvest::ResponseParser do
                  }
                }
               )
-      ResponseParser.parse(body, key: "root").should == { "foo" => "bar", "test" => "baz" }
+      ResponseParser.parse(body, headers.merge(key: "root")).should == { "foo" => "bar", "test" => "baz" }
     end
   end
 end

@@ -5,6 +5,7 @@ require_relative './person.rb'
 require_relative './me.rb'
 require_relative './company.rb'
 require_relative './error/harvest_error.rb'
+require_relative './error/http_error.rb'
 require_relative './response_parser'
 
 module Harvest
@@ -34,13 +35,9 @@ module Harvest
     end
 
     def invoice(id)
-      begin
-        attributes = get_data("invoices/#{id}", key: "invoice")
-        attributes.delete("csv_line_items")
-        Harvest::Invoice.new(attributes)
-      rescue KeyError
-        raise Harvest::InvoiceNotFound
-      end
+      attributes = get_data("invoices/#{id}", key: "invoice")
+      attributes.delete("csv_line_items")
+      Harvest::Invoice.new(attributes)
     end
 
     def customers(query = {})
@@ -68,8 +65,12 @@ module Harvest
       query = opts.fetch(:query, {})
       key = opts.fetch(:key, nil)
 
-      body = get(path, query)
-      ResponseParser.parse(body, key: key)
+      request = request_full(REQUEST_PATH: path,
+                             REQUEST_QUERY: query)
+      response_headers = request["RESPONSE_HEADERS"]
+      body = request["RESPONSE_BODY"]
+      ResponseParser.parse(body, response_headers: response_headers,
+                                 key: key)
     end
   end
 end

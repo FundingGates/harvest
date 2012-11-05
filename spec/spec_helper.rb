@@ -10,6 +10,7 @@ RSpec.configure do |config|
   # Add VCR to all tests
   config.around(:each) do |example|
     options = example.metadata[:vcr] || {}
+    options.merge(:decode_compressed_response => true)
     if options[:record] == :skip 
       VCR.turned_off(&example)
     else

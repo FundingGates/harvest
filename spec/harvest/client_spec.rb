@@ -3,7 +3,7 @@ require 'spec_helper'
 require 'time'
 
 describe Harvest::Client do
-  subject { Harvest::Client.new('1wzL04XtJWcz9zeyvaiTb+f1qRYBayXG9kHUYKI01K0phuL6Z2TxGYowg1U1pT01QqZkbcC4U9zfuIqh4s3cFg==') }
+  subject { Harvest::Client.new('GSmlffVRkVebM5sLcrCCKNVRQDNQLcMEFf5Yu0tZD11usEd1DlL6/KKWo+iTAaNhuTzeO6c95beEgvz7+xq0NQ==') }
 
   describe '#new' do
     it 'delegates to the rest-core client' do
@@ -20,7 +20,7 @@ describe Harvest::Client do
 
     it 'raises an exception if Harvest returns an error' do
       client = Harvest::Client.new("bad-token")
-      expect { client.who_am_i? }.to raise_error(Harvest::AuthorizationFailure, /token provided is expired/)
+      expect { client.who_am_i? }.to raise_error(Harvest::Unauthorized)
     end
   end
 
@@ -59,7 +59,7 @@ describe Harvest::Client do
     end
 
     it 'raises an exception if an invoice id is not valid' do
-      expect { subject.invoice('abc123') }.to raise_error Harvest::InvoiceNotFound
+      expect { subject.invoice('abc123') }.to raise_error Harvest::NotFound
     end
   end
 
