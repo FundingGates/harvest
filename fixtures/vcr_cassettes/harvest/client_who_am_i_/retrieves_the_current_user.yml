@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.harvestapp.com/account/who_am_i?access_token=1wzL04XtJWcz9zeyvaiTb+f1qRYBayXG9kHUYKI01K0phuL6Z2TxGYowg1U1pT01QqZkbcC4U9zfuIqh4s3cFg==
+    uri: https://api.harvestapp.com/account/who_am_i?access_token=GSmlffVRkVebM5sLcrCCKNVRQDNQLcMEFf5Yu0tZD11usEd1DlL6/KKWo+iTAaNhuTzeO6c95beEgvz7+xq0NQ==
     body:
       encoding: ASCII-8BIT
       string: !binary ""
@@ -28,7 +28,7 @@ http_interactions:
         bmdpbng=
       !binary "RGF0ZQ==":
       - !binary |-
-        RnJpLCAwMiBOb3YgMjAxMiAxNTozNDoyNyBHTVQ=
+        TW9uLCAwNSBOb3YgMjAxMiAxNDozMzo1NSBHTVQ=
       !binary "Q29udGVudC1UeXBl":
       - !binary |-
         YXBwbGljYXRpb24veG1sOyBjaGFyc2V0PXV0Zi04
@@ -70,18 +70,18 @@ http_interactions:
       !binary "U2V0LUNvb2tpZQ==":
       - !binary |-
         X2hhcnZlc3Rfc2Vzcz1CQWg3QmtraUQzTmxjM05wYjI1ZmFXUUdPZ1pGUmlJ
-        bE1XTXpaVGN5T1dOalptVTJNV05rTVRkbU1tUmlNRFl6WW1JMFlqSXlOV0kl
-        M0QtLTMyZWUxMzI3YjI0MGU4MzhiZTE2YWM1M2Y2OGIyNGJmYzIyZmY4MWE7
+        bFpUUXlaalUyT1dJeFlURmxOREl6WVdZelpXTTVOV1U0WWpZd01qQmxZbVEl
+        M0QtLTVjMDdhZWJjNGI0NTUzMWE2M2IxMGY1MDdlM2YxNDg1MjEwYmZjMzA7
         IGRvbWFpbj0uaGFydmVzdGFwcC5jb207IHBhdGg9LzsgSHR0cE9ubHk=
       !binary "WC1SdW50aW1l":
       - !binary |-
-        MC4wNjA3NDE=
+        MC4xMDMzMzI=
       !binary "WC1IYXJ2ZXN0LUJveA==":
       - !binary |-
         cmFpbHMx
       !binary "WC1IYXJ2ZXN0LUZl":
       - !binary |-
-        bGIz
+        bGI0
       !binary "WC1IYXJ2ZXN0LURj":
       - !binary |-
         dnhueQ==
@@ -91,20 +91,20 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAA41UyW7bMBC95ysEHYoWKE07MIouDNOiaNpLT0nOwZgaSay5
-        gaTcuF9fypS8qHbQkzgz7w05yxO7fdaq2KAP0pqbcjGblwUaYStpmpvy8eGO
-        vC9v+RVrIbT8qiiYsNqB2fbnZK0gIOm85G2MLnyktO5MT20gYpi14DcYIjg3
-        SzRG9+hMrjulSGU1SMNf5B0DM9WARn6XOcX3nsTozpfDIKLcYBG3Dm/KlbUK
-        wZQ8+g4ZzbEB+BtxTdJNPpIKtvynNenD6MSdsVFqJLX1GiKvUEgNitFjZ4YJ
-        ZcWaL65bRvMxuwcGCVu9sorPGJ14BrZV1pMgWkzFWA+mSU8+cWactlWnMGQr
-        2fjs0AQM52seo3u4NBsrxSX4GD1kD6nOvssX0o/hPSGNztsNqCm+BhX6GQzh
-        oRh6Ug2Lre0CmCqQgA48ROv529TqM+5+I+nRSrIuoD+a1x9rkH+DENGb4iE5
-        iteP98Ur0O5T8RUMVPAmz3AHPOWRLgpi6zpgHMqQJmKDvuRksVzO5wfmEXRI
-        IqspZzm/Xnx4l5pbDRBM+6w4CGE7E9MeOxBraDB8PtHCTgAZOux2paW5sNp9
-        aBSX9CGSnSZ+ZDklHR18GaRgtL84x+jBHK7aQNJAUqz6H33TtAPp+TSNtpYK
-        nwZzJZunFZqZM0164SFjviKBf6GIRKdhNOPo+v4FMgldWKV/gfscAkxaFST+
-        8uaeQE6IwmPyjblfoE+A55K8rLYzwFEXZyvbLWjqunakP/lwoTNTWBZLFgij
-        +Yf+F/YE24H/BQAA
+        H4sIAAAAAAAAA41US4/TMBC+76+IckAg4bpdIbSA6wUhFi6cdve8mjqTxKxf
+        sp2y5dfj1Ekfoa04xTPzfWPP4wu7fdGqWKMP0ppluZjNywKNsJU0zbJ8fLgj
+        N+Utv2IthJZfFQUTVjswm/6crBUEJJ2XvI3RhY+U1p3pqQ1EDLMW/BpDBOdm
+        icboDp3JdacUqawGafhF3iEwUw1o5HeZU3zvSYxufTkMIso1FnHjcFmurFUI
+        puTRd8hojg3A34jPJN3kI6lgw39akz6MTtwZG6VGUluvIfIKhdSgGD10ZphQ
+        VjzzxXXLaD5m98AgYaNXVvEZoxPPwLbKehJEi6kY68E06clHzozTtuoUhmwl
+        G18cmoDhdM1jdAeXZm2lOAcfo/vsIdXZd/lM+jG8I6TRebsGNcXXoEI/gyE8
+        FEOPqmGxtV0AUwUS0IGHaD1/m1p9wt1vJD1YSdYF9Afz+mMN8m8QInpTPCRH
+        8frxvngF2n0qvoKBCt7kGW6BxzzSRUFsXQeMQxnSRGzQl5wsbubz+Z55AB2S
+        yGrKeTe/Xnx4n5pbDRBM+6w4CGE7E9MeOxDP0GD4fKSFrQAydNjtSktzZrX7
+        0Cgu6UMkW038yHJKOtr7MkjBaH9xjtG9OVy1hqSBpFj1P/qmaQfS82kabS0V
+        Pg3mSjZPKzQzZ5r0wn3GfEUC/0IRiU7DaMbR9f0LZBI6s0r/Anc5BJi0Kkj8
+        +c09ghwRhcfkG3NfoE+Ap5JcVtsJ4KiLk5VtFzR1XTvSn3w405kpLIslC4TR
+        /EP/C/ejFC//BQAA
     http_version: 
-  recorded_at: Fri, 02 Nov 2012 15:34:51 GMT
+  recorded_at: Mon, 05 Nov 2012 14:34:28 GMT
 recorded_with: VCR 2.2.5
