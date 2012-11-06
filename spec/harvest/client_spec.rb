@@ -3,7 +3,7 @@ require 'spec_helper'
 require 'time'
 
 describe Harvest::Client do
-  subject { Harvest::Client.new('GSmlffVRkVebM5sLcrCCKNVRQDNQLcMEFf5Yu0tZD11usEd1DlL6/KKWo+iTAaNhuTzeO6c95beEgvz7+xq0NQ==') }
+  subject { Harvest::Client.new('JZB06ff7yfl6xZwCiPoYXPvMnpiuC+OdaGGK5lqpIwXC+/+8I3h4vK2rxhWhzP7xHMvtPhAStF4BDLt2pL9+xQ==') }
 
   describe '#new' do
     it 'delegates to the rest-core client' do
@@ -103,6 +103,7 @@ describe Harvest::Client do
   describe '#contacts' do
     it 'retrieves an array of contacts' do
       contacts = subject.contacts
+      contacts[0].first_name.should == 'Allison'
       contacts.first.should be_a_kind_of Harvest::Person
     end
   end

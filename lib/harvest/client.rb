@@ -51,7 +51,7 @@ module Harvest
     end
 
     def contacts
-      contacts = get_data('clients', key: 'clients')
+      contacts = get_data('contacts', key: 'contacts')
       contacts.map { |contact| Harvest::Person.new(contact) }
     end
 
