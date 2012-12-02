@@ -1,5 +1,6 @@
 require_relative './hclient.rb'
 require_relative './invoice.rb'
+require_relative './payment.rb'
 require_relative './customer.rb'
 require_relative './person.rb'
 require_relative './me.rb'
@@ -38,6 +39,21 @@ module Harvest
       attributes = get_data("invoices/#{id}", key: "invoice")
       attributes.delete("csv_line_items")
       Harvest::Invoice.new(attributes)
+    end
+
+    def payments_for_invoice(invoice_id, query = {})
+      payments = get_data("invoices/#{invoice_id}/payments",
+                          query: query,
+                          key: "payments")
+      payments.map { |p| Harvest::Payment.new(p) }
+    end
+
+    def payment(invoice_id, id)
+      attributes = get_data("invoices/#{invoice_id}/payments/#{id}",
+                            key: "payment")
+
+      attributes.delete("csv_line_items")
+      Harvest::Payment.new(attributes)
     end
 
     def customers(query = {})

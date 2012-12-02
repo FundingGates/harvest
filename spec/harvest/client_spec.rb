@@ -3,7 +3,7 @@ require 'spec_helper'
 require 'time'
 
 describe Harvest::Client do
-  subject { Harvest::Client.new('JZB06ff7yfl6xZwCiPoYXPvMnpiuC+OdaGGK5lqpIwXC+/+8I3h4vK2rxhWhzP7xHMvtPhAStF4BDLt2pL9+xQ==') }
+  subject { Harvest::Client.new('D4mPzRt4jQDmnC1ayYzFeF/WuhpnoAlD/U8frWIAeksB2ke8Qu/cUvd9LtusJcKpe4seKruQ31tdY1iSA7uxGw==') }
 
   describe '#new' do
     it 'delegates to the rest-core client' do
@@ -60,6 +60,34 @@ describe Harvest::Client do
 
     it 'raises an exception if an invoice id is not valid' do
       expect { subject.invoice('abc123') }.to raise_error Harvest::NotFound
+    end
+  end
+
+  describe '#payments_for_invoice' do
+    let(:invoice_id) { '1990900' }
+
+    it 'returns an array of payments' do
+      payments = subject.payments_for_invoice(invoice_id)
+      payments[0].should be_a Harvest::Payment
+    end
+
+    it 'accepts query params' do
+      cutoff = Time.utc(2012, 10, 1)
+      payments = subject.payments_for_invoice(invoice_id, updated_since: cutoff)
+      expect { payments.delete_if { |payment| payment.updated_at < cutoff } }.to_not change(payments, :length)
+    end
+  end
+
+  describe '#payment' do
+    let(:invoice_id) { '1990900' }
+    it 'returns an payment from invoice_id and id' do
+      payment = subject.payment(invoice_id, '1625417')
+      payment.paid_at.should == DateTime.parse('2012-11-29 02:40:30 UTC')
+      payment.updated_at.should be_a_kind_of Time
+    end
+
+    it 'raises an exception if an payment id is not valid' do
+      expect { subject.payment(invoice_id, 'abc123') }.to raise_error Harvest::NotFound
     end
   end
 

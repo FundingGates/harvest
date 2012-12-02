@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.harvestapp.com/people?access_token=D4mPzRt4jQDmnC1ayYzFeF/WuhpnoAlD/U8frWIAeksB2ke8Qu/cUvd9LtusJcKpe4seKruQ31tdY1iSA7uxGw==
+    uri: https://api.harvestapp.com/invoices/1990900/payments?access_token=D4mPzRt4jQDmnC1ayYzFeF/WuhpnoAlD/U8frWIAeksB2ke8Qu/cUvd9LtusJcKpe4seKruQ31tdY1iSA7uxGw==
     body:
       encoding: ASCII-8BIT
       string: !binary ""
@@ -28,7 +28,7 @@ http_interactions:
         bmdpbng=
       !binary "RGF0ZQ==":
       - !binary |-
-        U3VuLCAwMiBEZWMgMjAxMiAwMjoxOTo0OCBHTVQ=
+        U3VuLCAwMiBEZWMgMjAxMiAwMjoyMDowMyBHTVQ=
       !binary "Q29udGVudC1UeXBl":
       - !binary |-
         YXBwbGljYXRpb24veG1sOyBjaGFyc2V0PXV0Zi04
@@ -66,29 +66,22 @@ http_interactions:
         MTIwMA==
       !binary "WC1TZXJ2ZWQtRnJvbQ==":
       - !binary |-
-        aHR0cDovL2FwaS5oYXJ2ZXN0YXBwLmNvbS9wZW9wbGU=
+        aHR0cDovL2FwaS5oYXJ2ZXN0YXBwLmNvbS9pbnZvaWNlcy8xOTkwOTAwL3Bh
       !binary "WC1VYS1Db21wYXRpYmxl":
       - !binary |-
         SUU9RWRnZSxjaHJvbWU9MQ==
       !binary "U2V0LUNvb2tpZQ==":
       - !binary |-
-        X2hhcnZlc3Rfc2Vzcz1CQWg3QjBraUQzTmxjM05wYjI1ZmFXUUdPZ1pGUmlJ
-        bE5UUTJZVGswTVRBNE0yUTBOV0UwTXpNME5tUm1PR1poWWpGbE5XVTVOamhK
-        SWdwbWJHRnphQVk3QUVaSlF6b2xRV04wYVc5dVJHbHpjR0YwWTJnNk9rWnNZ
-        WE5vT2pwR2JHRnphRWhoYzJoN0Jqb0xibTkwYVdObFNTSUJmazFoZUdsdGRX
-        MGdiblZ0WW1WeUlHOW1JSFZ6WlhKeklISmxZV05vWldRdUlDQlVieUJoWkdR
-        Z1lXNXZkR2hsY2lCMWMyVnlMQ0J3YkdWaGMyVWdQR0VnYUhKbFpqMG5MMk52
-        YlhCaGJua3ZaV1JwZEY5d2JHRnVKejUxY0dkeVlXUmxJRzl5SUdOMWMzUnZi
-        V2w2WlNCNWIzVnlJSEJzWVc0OEwyRSUyQkxnWTdBRVlHT2dwQWRYTmxaRzg2
-        Q0ZObGRBWTZDa0JvWVhOb2V3WTdCMVElM0QtLWRlOGVkNDk4ZGIxZjJlNmZk
-        NzQzYjEyMjVjMjEyMGUyMGIwMjY1MDM7IGRvbWFpbj0uaGFydmVzdGFwcC5j
-        b207IHBhdGg9LzsgSHR0cE9ubHk=
+        X2hhcnZlc3Rfc2Vzcz1CQWg3QmtraUQzTmxjM05wYjI1ZmFXUUdPZ1pGUmlJ
+        bE0yRmlOV1kxTXpRd01UYzNOek15TUdVeFpqVmhaR1EzWXpneFptUXpPVEUl
+        M0QtLTZkZDcyNzdmZTQzYmRlMmNkYjk0NDVlODI4NDA1ODZkNWEyYzdhNjI7
+        IGRvbWFpbj0uaGFydmVzdGFwcC5jb207IHBhdGg9LzsgSHR0cE9ubHk=
       !binary "WC1SdW50aW1l":
       - !binary |-
-        MC4wMjQ3MDg=
+        MC4wMzIyNzY=
       !binary "WC1IYXJ2ZXN0LUJveA==":
       - !binary |-
-        cmFpbHM1
+        cmFpbHM0
       !binary "Q29udGVudC1FbmNvZGluZw==":
       - !binary |-
         Z3ppcA==
@@ -101,22 +94,14 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAA5VWTXPTMBC991d4fGDgoOaDDv3AcWEYGO6kF25be52IypKR
-        1knDr2cVy4ntxoGebGvfe9rVrnad3D+XKtqgddLoRTy7nMYR6szkUq8W8cPy
-        m7iJ79OLpHYMiWhX4SIGa2EXpxdRtF/2L/yaQbZGEZQCUmrCFdo4nSaTnr3l
-        WATCXAAFQs6fJEuM0/l0NhfTWzG/Xs5nd7Oru/c3P1nkQAgKORZQKxL4XKF2
-        KDI2r4zdCZkPfIi0VIuYbM3iyeQMb0S5suYXZvRa4SNtoLs2tVU7YXnjNnjM
-        ZAlqRLCDHygRuKf/dStghwp85K8NcMA5KFZgqURNQ1a73gLrSkl/6nsht0Yk
-        sQVNTmhD2JbaozEKQcep12GV86QgjSVIlUKWmVoT13EF2ROs0H0qau3resUC
-        7jIzZTJpoB2agILQClc/lpJOO/ESFwQKaR0JDSWm38Fu0FEy6ax1Qd59O5Qv
-        QDlsKXtE4KzBCQ4HnRNkBCglippqezh+N6L0T17Qf5Hx9Go6n91+SCaHvMqc
-        UydpJ7gI+5ntWlqw35bkBk8f4MHcgeel1ONobz2CM6PJsoIZO8EeJvAUtHn4
-        XFXJ5PjZmI2/rSaToEQTUCE5Qb1AT0ICvQLntsbmIluDXqGw+LuWFvMRB8fg
-        rZrFAq31fa7iVG14R8edD3Xqq6Kw7DZrjIKGIuwrN7YSaW3yNOfi3XXZPeuQ
-        2t5vR0C1Yz8rY/m2hY2aLHbFzuMbdUKF1dpo5DM9vgcbx/fHf37l/KDV0ZIX
-        orcPP6I3UFYfoy+gIYd3TGyBgbeV5O+jn0c+q/3MDa2BVFf52enjB9B8OZ3e
-        zXn63PL0ORKCQug9uHUK/Q6nK3iI6pGPjaxtbsfxOSybM4ye5hbxiUdFLrnp
-        0TmfesBWorsmHJeHODjkwx+Mg5Pw/b/BpPk5aJ7cav4CmFDNSWsIAAA=
+        H4sIAAAAAAAAA5WSwVKDMBCG730KJveUAK2WDlC9OD5AvXhbw4oZIcmEUMWn
+        N0igre0444kk+/3/Lrub7T6bOjigaYWSOYmWjAQouSqFrHLytH+gG7IrFpmG
+        vkFp28D2GnMCxkBPikUQTJHh7G7QqE5aT5XIRQM1KdbJZpkmWThGJ7Szb8qI
+        L7AudSBFnRNrOiSF405DHucGwWJJYXZ3VysaJ4hZFNMoognbs3i7Ytskes7C
+        o8A7iNIrhbRYoSFFdBOvV9FtFopyYuRBCY70CpumLGXMsTPiNVJZbF3V43d8
+        0yD+LDVOp1KZK9XTs7anGmpqDcgW+NCDoZ6zDl1njgbDSGjl0n448OJnLrx+
+        4d7HIFemdC186YtHMAdsbXCvdRaeBi5Qig2IugDOh2G7PdLA36HC9u61k8Ne
+        DXnaJVfNmZGXjXadLv837KPgZynDeSvno5vMNzDi4GjtAgAA
     http_version: 
-  recorded_at: Sun, 02 Dec 2012 02:19:48 GMT
+  recorded_at: Sun, 02 Dec 2012 02:20:03 GMT
 recorded_with: VCR 2.2.5
