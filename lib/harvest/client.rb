@@ -1,3 +1,4 @@
+require_relative './logging.rb'
 require_relative './hclient.rb'
 require_relative './invoice.rb'
 require_relative './payment.rb'
@@ -11,6 +12,8 @@ require_relative './response_parser'
 
 module Harvest
   class Client < SimpleDelegator
+    include Harvest::Logging
+
     def initialize(oauth_token)
       super(HClient.new(access_token: oauth_token))
     end
@@ -81,10 +84,21 @@ module Harvest
       query = opts.fetch(:query, {})
       key = opts.fetch(:key, nil)
 
+      if ENV['LOG_HARVEST']
+        debug "Request path: #{path.inspect}"
+        debug "Request query: #{query.inspect}"
+      end
+
       request = request_full(REQUEST_PATH: path,
                              REQUEST_QUERY: query)
       response_headers = request["RESPONSE_HEADERS"]
       body = request["RESPONSE_BODY"]
+
+      if ENV['LOG_HARVEST']
+        debug "Response headers: #{headers.inspect}"
+        debug "Response body: #{body.inspect}"
+      end
+
       ResponseParser.parse(body, response_headers: response_headers,
                                  key: key)
     end
