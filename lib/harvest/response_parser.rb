@@ -37,7 +37,7 @@ module Harvest
       end
 
       def parse_from_xml(body)
-        Hash.from_xml(body)
+        Hash.from_trusted_xml(body)
         rescue REXML::ParseException
           raise ParserError, "unable to parse XML response"
       end
