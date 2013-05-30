@@ -1,4 +1,3 @@
-require_relative './logging.rb'
 require_relative './hclient.rb'
 require_relative './invoice.rb'
 require_relative './payment.rb'
@@ -84,20 +83,16 @@ module Harvest
       query = opts.fetch(:query, {})
       key = opts.fetch(:key, nil)
 
-      if ENV['LOG_HARVEST']
-        debug "Request path: #{path.inspect}"
-        debug "Request query: #{query.inspect}"
-      end
+      logger.debug "Request path: #{path.inspect}"
+      logger.debug "Request query: #{query.inspect}"
 
       request = request_full(REQUEST_PATH: path,
                              REQUEST_QUERY: query)
       response_headers = request["RESPONSE_HEADERS"]
       body = request["RESPONSE_BODY"]
 
-      if ENV['LOG_HARVEST']
-        debug "Response headers: #{headers.inspect}"
-        debug "Response body: #{body.inspect}"
-      end
+      logger.debug "Response headers: #{headers.inspect}"
+      logger.debug "Response body: #{body}"
 
       ResponseParser.parse(body, response_headers: response_headers,
                                  key: key)
