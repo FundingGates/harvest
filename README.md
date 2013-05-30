@@ -52,10 +52,17 @@ The full list of attributes is available on the Harvest API website.  Each
 attribute is accessable through a method call.  **Currently only Invoices and
 Customers (Clients as Harvest refers to them) are supported.**
 
+## Running tests
+
+You can run all of the tests with:
+
+    rake
+
 ## Contributing
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+4. Run the tests (`rake`)
+5. Push to the branch (`git push origin my-new-feature`)
+6. Create new Pull Request
