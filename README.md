@@ -1,6 +1,9 @@
 # Harvest
 
-Integrate with the [Harvest API](http://www.getharvest.com/api).  Verification is done using OAuth2 rather than HTTP Basic.  If you would like to authenticate using HTTP Basic, check out the [Harvested](https://github.com/zmoazeni/harvested) gem.
+Integrate with the [Harvest API](http://www.getharvest.com/api).  Verification
+is done using OAuth2 rather than HTTP Basic.  If you would like to authenticate
+using HTTP Basic, check out the
+[Harvested](https://github.com/zmoazeni/harvested) gem.
 
 ## Installation
 
@@ -45,7 +48,9 @@ client.customers
 #=> [ #<Harvest::Customer>, #<Harvest::Customer> ]
 ```
 
-The full list of attributes is available on the Harvest API website.  Each attribute is accessable through a method call.  **Currently only Invoices and Customers (Clients as Harvest refers to them) are supported.**
+The full list of attributes is available on the Harvest API website.  Each
+attribute is accessable through a method call.  **Currently only Invoices and
+Customers (Clients as Harvest refers to them) are supported.**
 
 ## Contributing
 
