@@ -18,6 +18,7 @@ module Harvest
 
       private
       def hashify(body, content_type)
+        return {} if body.empty? || body.nil?
         case content_type
         when /xml/
           response = parse_from_xml(body)
