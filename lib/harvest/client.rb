@@ -11,7 +11,6 @@ require_relative './response_parser'
 
 module Harvest
   class Client < SimpleDelegator
-    include Harvest::Logging
 
     def initialize(oauth_token)
       super(HClient.new(access_token: oauth_token))
