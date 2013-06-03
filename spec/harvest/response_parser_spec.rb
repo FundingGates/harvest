@@ -23,6 +23,10 @@ describe Harvest::ResponseParser do
                )
       ResponseParser.parse(body, headers.merge(key: 'root')).should == { "foo" => "bar", "test" => "baz" }
     end
+
+    it 'parses a blank response' do
+      ResponseParser.parse("", headers).should == {}
+    end
   end
 
   context "with JSON" do

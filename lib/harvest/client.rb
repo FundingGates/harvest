@@ -11,6 +11,7 @@ require_relative './response_parser'
 
 module Harvest
   class Client < SimpleDelegator
+
     def initialize(oauth_token)
       super(HClient.new(access_token: oauth_token))
     end
@@ -85,6 +86,7 @@ module Harvest
                              REQUEST_QUERY: query)
       response_headers = request["RESPONSE_HEADERS"]
       body = request["RESPONSE_BODY"]
+
       ResponseParser.parse(body, response_headers: response_headers,
                                  key: key)
     end
