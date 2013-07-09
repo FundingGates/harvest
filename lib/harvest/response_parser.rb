@@ -24,6 +24,8 @@ module Harvest
           response = parse_from_xml(body)
         when /json/
           response = parse_from_json(body)
+        when /html/
+          response = parse_from_html(body)
         else
           raise ParserError, "unknown response type: #{content_type}"
         end
@@ -42,6 +44,14 @@ module Harvest
         rescue REXML::ParseException
           raise ParserError, "unable to parse XML response"
       end
+
+      def parse_from_html(body)
+        hash = Hash.from_trusted_xml(body)
+        raise ClientError if hash["html"]["body"] =~ /You are being/
+        hash
+        rescue REXML::ParseException
+          raise ParserError, "unable to parse XML response"
+        end
 
       def check_for_empty_response(hash)
         if hash.has_key?("nil_classes")
