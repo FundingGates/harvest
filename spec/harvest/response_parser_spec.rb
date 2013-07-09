@@ -29,6 +29,17 @@ describe Harvest::ResponseParser do
     end
   end
 
+  context "with HTML" do
+    let(:headers) { { :response_headers => { "CONTENT_TYPE" => "text/html" } } }
+
+    it 'parses a redirect' do
+      body = %(
+        <html><body>You are being <a href=\"https://api.harvestapp.com/company/inactive\">redirected</a>.</body></html>
+      )
+      -> { ResponseParser.parse(body, headers) }.should raise_exception(Harvest::ClientError)
+    end
+  end
+
   context "with JSON" do
     let(:headers) { { :response_headers => { "CONTENT_TYPE" => "text/json" } } }
 
