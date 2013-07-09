@@ -1,4 +1,5 @@
 require 'logger'
+
 module Harvest
   module Logging
     module ClassMethods
