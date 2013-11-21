@@ -82,13 +82,17 @@ module Harvest
       query = opts.fetch(:query, {})
       key = opts.fetch(:key, nil)
 
-      request = request_full(REQUEST_PATH: path,
-                             REQUEST_QUERY: query)
-      response_headers = request["RESPONSE_HEADERS"]
-      body = request["RESPONSE_BODY"]
+      env = request_full(REQUEST_PATH: path, REQUEST_QUERY: query)
+      response_status = env['RESPONSE_STATUS'].to_i
+      response_headers = env['RESPONSE_HEADERS']
+      response_body = env['RESPONSE_BODY']
 
-      ResponseParser.parse(body, response_headers: response_headers,
-                                 key: key)
+      ResponseParser.parse(
+        response_status,
+        response_headers,
+        response_body,
+        key: key
+      )
     end
   end
 end

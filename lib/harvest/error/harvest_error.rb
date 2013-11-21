@@ -5,8 +5,5 @@ module Harvest
   end
 
   class ParserError < HarvestError
-    def message
-      "unable to parse response body"
-    end
   end
 end
