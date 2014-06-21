@@ -12,7 +12,7 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{Wrapper for the Harvest API}
   gem.homepage      = "https://github.com/FundingGates/harvest"
 
-  gem.add_dependency 'rest-client', '1.7.0.rc1'
+  gem.add_dependency 'rest-client', '~> 1.6.7'
   gem.add_dependency 'rest-core', '~> 2.0.0'
   gem.add_dependency 'json', '~> 1.7.7'
   gem.add_dependency 'activesupport', '~> 3.2.13'
