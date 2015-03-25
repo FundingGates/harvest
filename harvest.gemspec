@@ -14,7 +14,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'rest-client', '~> 1.7.2'
   gem.add_dependency 'rest-core', '~> 2.0.0'
-  gem.add_dependency 'json', '~> 1.7.7'
+  gem.add_dependency 'json'
   gem.add_dependency 'activesupport'
   gem.add_development_dependency 'pry'
   gem.add_development_dependency 'rake', '~> 10.0'
